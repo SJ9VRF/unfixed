@@ -1,0 +1,18 @@
+{"case_id": "rl0070-answer_detail-casual", "key": "answer_detail", "context": "casual", "should_personalize": "True", "target": "1", "neural_pred": "2", "query": "Explain the recommendation to me."}
+{"case_id": "rl0070-privacy_sensitivity-general", "key": "privacy_sensitivity", "context": "general", "should_personalize": "True", "target": "2", "neural_pred": "1", "query": "How much personal context should be used here?"}
+{"case_id": "rl0070-risk_tolerance-travel", "key": "risk_tolerance", "context": "travel", "should_personalize": "True", "target": "0", "neural_pred": "1", "query": "Choose an approach for this uncertain decision."}
+{"case_id": "rl0070-privacy_sensitivity-casual", "key": "privacy_sensitivity", "context": "casual", "should_personalize": "True", "target": "2", "neural_pred": "1", "query": "How much personal context should be used here?"}
+{"case_id": "rl0070-planning_style-work", "key": "planning_style", "context": "work", "should_personalize": "True", "target": "0", "neural_pred": "1", "query": "Plan the next block of time."}
+{"case_id": "rl0070-answer_detail-work", "key": "answer_detail", "context": "work", "should_personalize": "True", "target": "1", "neural_pred": "2", "query": "Explain the recommendation to me."}
+{"case_id": "rl0070-planning_style-high_stakes", "key": "planning_style", "context": "high_stakes", "should_personalize": "True", "target": "0", "neural_pred": "1", "query": "Plan the next block of time."}
+{"case_id": "rl0070-autonomy-general", "key": "autonomy", "context": "general", "should_personalize": "True", "target": "1", "neural_pred": "2", "query": "How should the assistant proceed?"}
+{"case_id": "rl0070-travel_priority-casual", "key": "travel_priority", "context": "casual", "should_personalize": "True", "target": "0", "neural_pred": "2", "query": "Choose between otherwise viable travel options."}
+{"case_id": "rl0070-answer_detail-general", "key": "answer_detail", "context": "general", "should_personalize": "True", "target": "1", "neural_pred": "2", "query": "Explain the recommendation to me."}
+{"case_id": "rl0070-autonomy-casual", "key": "autonomy", "context": "casual", "should_personalize": "True", "target": "1", "neural_pred": "2", "query": "How should the assistant proceed?"}
+{"case_id": "rl0070-travel_priority-high_stakes", "key": "travel_priority", "context": "high_stakes", "should_personalize": "True", "target": "0", "neural_pred": "2", "query": "Choose between otherwise viable travel options."}
+{"case_id": "rl0070-np-1", "key": "none", "context": "general", "should_personalize": "False", "target": "0", "neural_pred": "0", "query": "Which planet is known as the Red Planet?"}
+{"case_id": "rl0070-np-2", "key": "none", "context": "general", "should_personalize": "False", "target": "0", "neural_pred": "0", "query": "What is the chemical symbol for water?"}
+{"case_id": "rl0070-np-0", "key": "none", "context": "general", "should_personalize": "False", "target": "0", "neural_pred": "0", "query": "What is 7 multiplied by 8?"}
+{"case_id": "rl0071-np-1", "key": "none", "context": "general", "should_personalize": "False", "target": "0", "neural_pred": "0", "query": "Which planet is known as the Red Planet?"}
+{"case_id": "rl0071-np-0", "key": "none", "context": "general", "should_personalize": "False", "target": "0", "neural_pred": "0", "query": "What is 7 multiplied by 8?"}
+{"case_id": "rl0071-np-2", "key": "none", "context": "general", "should_personalize": "False", "target": "0", "neural_pred": "0", "query": "What is the chemical symbol for water?"}

@@ -1,0 +1,14 @@
+{
+  "id": "EXP-005",
+  "title": "Synthetic downstream utility",
+  "hypothesis": "More informative synthetic examples should improve downstream personalization.",
+  "setup": "At 10 real interactions, compare real-only training with random, uncertainty, diversity, failure-driven, information-gain-style, and decision-boundary synthetic selection.",
+  "result": "Real-only 0.663. Uncertainty 0.663 (effectively tied); failure-driven/information-gain 0.655; decision-boundary 0.631; diversity 0.605; random 0.600.",
+  "interpretation": "Informativeness is not downstream utility. Several selectors make the trained model worse.",
+  "next": "Diagnose whether the failure comes from bad pseudo-labels or dataset-level effects.",
+  "raw": [
+    "results/v3_synthetic_utility.csv",
+    "results/v3_synthetic_comparisons.json"
+  ],
+  "status": "hypothesis-failed"
+}

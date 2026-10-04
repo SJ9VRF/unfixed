@@ -1,0 +1,1413 @@
+{
+  "summary": {
+    "families": {
+      "anti_personalization": {
+        "mean_score": 1.0,
+        "n": 5,
+        "pass_rate": 1.0
+      },
+      "context_specific": {
+        "mean_score": 1.0,
+        "n": 5,
+        "pass_rate": 1.0
+      },
+      "preference_drift": {
+        "mean_score": 1.0,
+        "n": 5,
+        "pass_rate": 1.0
+      },
+      "stable_preference": {
+        "mean_score": 1.0,
+        "n": 5,
+        "pass_rate": 1.0
+      }
+    },
+    "mean_score": 1.0,
+    "median_latency_ms": 0.001544999975067185,
+    "n_trials": 20,
+    "pass_rate": 1.0,
+    "total_cost_usd": 0.0
+  },
+  "trials": [
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "cheaper",
+            "observed": "cheaper"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0032539999779146456,
+      "output": {
+        "decision": "cheaper",
+        "family": "stable_preference",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "stable-travel-price",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Choose between a cheaper flight and a more convenient flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "cheaper",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 0
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "cheaper",
+            "observed": "cheaper"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0025859999936983513,
+      "output": {
+        "decision": "cheaper",
+        "family": "stable_preference",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "stable-travel-price",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Choose between a cheaper flight and a more convenient flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "cheaper",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 1
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "cheaper",
+            "observed": "cheaper"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0020070000346095185,
+      "output": {
+        "decision": "cheaper",
+        "family": "stable_preference",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "stable-travel-price",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Choose between a cheaper flight and a more convenient flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "cheaper",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 2
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "cheaper",
+            "observed": "cheaper"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.03944700000602097,
+      "output": {
+        "decision": "cheaper",
+        "family": "stable_preference",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "stable-travel-price",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Choose between a cheaper flight and a more convenient flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "cheaper",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 3
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "cheaper",
+            "observed": "cheaper"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0008279999974547536,
+      "output": {
+        "decision": "cheaper",
+        "family": "stable_preference",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "stable-travel-price",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Choose between a cheaper flight and a more convenient flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "cheaper",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 4
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "comfort"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "convenient",
+            "observed": "convenient"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.002009000013458717,
+      "output": {
+        "decision": "convenient",
+        "family": "preference_drift",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "drift-travel-comfort",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "The user recently corrected their travel preference. Choose the flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "comfort"
+          }
+        },
+        {
+          "decision": "convenient",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 0
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "comfort"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "convenient",
+            "observed": "convenient"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.03832300001249678,
+      "output": {
+        "decision": "convenient",
+        "family": "preference_drift",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "drift-travel-comfort",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "The user recently corrected their travel preference. Choose the flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "comfort"
+          }
+        },
+        {
+          "decision": "convenient",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 1
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "comfort"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "convenient",
+            "observed": "convenient"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0008700000080352766,
+      "output": {
+        "decision": "convenient",
+        "family": "preference_drift",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "drift-travel-comfort",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "The user recently corrected their travel preference. Choose the flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "comfort"
+          }
+        },
+        {
+          "decision": "convenient",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 2
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "comfort"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "convenient",
+            "observed": "convenient"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0007429999868691084,
+      "output": {
+        "decision": "convenient",
+        "family": "preference_drift",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "drift-travel-comfort",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "The user recently corrected their travel preference. Choose the flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "comfort"
+          }
+        },
+        {
+          "decision": "convenient",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 3
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "comfort"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "convenient",
+            "observed": "convenient"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.001596999993580539,
+      "output": {
+        "decision": "convenient",
+        "family": "preference_drift",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "drift-travel-comfort",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "The user recently corrected their travel preference. Choose the flight."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "comfort"
+          }
+        },
+        {
+          "decision": "convenient",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 4
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "factual",
+            "observed": "factual"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": false,
+            "should_personalize": false
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.001492999956553831,
+      "output": {
+        "decision": "factual",
+        "family": "anti_personalization",
+        "personalized": false
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "factual-restraint",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "What year was the Eiffel Tower completed?"
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "factual",
+          "event": "decide",
+          "personalized": false
+        }
+      ],
+      "trial_index": 0
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "factual",
+            "observed": "factual"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": false,
+            "should_personalize": false
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0011740000331883493,
+      "output": {
+        "decision": "factual",
+        "family": "anti_personalization",
+        "personalized": false
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "factual-restraint",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "What year was the Eiffel Tower completed?"
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "factual",
+          "event": "decide",
+          "personalized": false
+        }
+      ],
+      "trial_index": 1
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "factual",
+            "observed": "factual"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": false,
+            "should_personalize": false
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0008069999921644921,
+      "output": {
+        "decision": "factual",
+        "family": "anti_personalization",
+        "personalized": false
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "factual-restraint",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "What year was the Eiffel Tower completed?"
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "factual",
+          "event": "decide",
+          "personalized": false
+        }
+      ],
+      "trial_index": 2
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "factual",
+            "observed": "factual"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": false,
+            "should_personalize": false
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.021843000013177516,
+      "output": {
+        "decision": "factual",
+        "family": "anti_personalization",
+        "personalized": false
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "factual-restraint",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "What year was the Eiffel Tower completed?"
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "factual",
+          "event": "decide",
+          "personalized": false
+        }
+      ],
+      "trial_index": 3
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "travel_priority": "price"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "factual",
+            "observed": "factual"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": false,
+            "should_personalize": false
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0007330000357796962,
+      "output": {
+        "decision": "factual",
+        "family": "anti_personalization",
+        "personalized": false
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "factual-restraint",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "What year was the Eiffel Tower completed?"
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "travel_priority": "price"
+          }
+        },
+        {
+          "decision": "factual",
+          "event": "decide",
+          "personalized": false
+        }
+      ],
+      "trial_index": 4
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "work_style": "detailed"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "detailed",
+            "observed": "detailed"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0017979999711315031,
+      "output": {
+        "decision": "detailed",
+        "family": "context_specific",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "work-detail",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Write a technical explanation for a work review."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "work_style": "detailed"
+          }
+        },
+        {
+          "decision": "detailed",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 0
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "work_style": "detailed"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "detailed",
+            "observed": "detailed"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0011220000146749953,
+      "output": {
+        "decision": "detailed",
+        "family": "context_specific",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "work-detail",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Write a technical explanation for a work review."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "work_style": "detailed"
+          }
+        },
+        {
+          "decision": "detailed",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 1
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "work_style": "detailed"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "detailed",
+            "observed": "detailed"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0013599999988400668,
+      "output": {
+        "decision": "detailed",
+        "family": "context_specific",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "work-detail",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Write a technical explanation for a work review."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "work_style": "detailed"
+          }
+        },
+        {
+          "decision": "detailed",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 2
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "work_style": "detailed"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "detailed",
+            "observed": "detailed"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.0010809999935190717,
+      "output": {
+        "decision": "detailed",
+        "family": "context_specific",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "work-detail",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Write a technical explanation for a work review."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "work_style": "detailed"
+          }
+        },
+        {
+          "decision": "detailed",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 3
+    },
+    {
+      "cost_usd": 0.0,
+      "final_state": {
+        "work_style": "detailed"
+      },
+      "graders": [
+        {
+          "details": {
+            "expected": "detailed",
+            "observed": "detailed"
+          },
+          "name": "outcome_match",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "personalized": true,
+            "should_personalize": true
+          },
+          "name": "restraint",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "mismatches": {}
+          },
+          "name": "state_verification",
+          "passed": true,
+          "score": 1.0
+        },
+        {
+          "details": {
+            "steps": 3
+          },
+          "name": "trajectory_sanity",
+          "passed": true,
+          "score": 1.0
+        }
+      ],
+      "latency_ms": 0.01881999997976891,
+      "output": {
+        "decision": "detailed",
+        "family": "context_specific",
+        "personalized": true
+      },
+      "passed": true,
+      "score": 1.0,
+      "task_id": "work-detail",
+      "trajectory": [
+        {
+          "event": "observe",
+          "prompt": "Write a technical explanation for a work review."
+        },
+        {
+          "event": "read_state",
+          "state": {
+            "work_style": "detailed"
+          }
+        },
+        {
+          "decision": "detailed",
+          "event": "decide",
+          "personalized": true
+        }
+      ],
+      "trial_index": 4
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "EXP-009",
+  "title": "Drift detector baseline check",
+  "hypothesis": "The project-specific drift heuristic is a strong change detector.",
+  "setup": "320 controlled cases; compare heuristic, EWMA, CUSUM, and Bayesian-shift scores by ROC-AUC.",
+  "result": "Heuristic 0.928 ROC-AUC; EWMA 0.980; CUSUM 0.981; Bayesian shift 0.969.",
+  "interpretation": "The custom heuristic works but is not competitive with standard detectors in this setting.",
+  "next": "Remove drift detection from the novelty claim; keep standard baselines in the evaluation stack.",
+  "raw": [
+    "results/paper_drift_baselines.csv"
+  ],
+  "status": "hypothesis-failed"
+}

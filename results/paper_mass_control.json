@@ -1,0 +1,60 @@
+{
+  "summary": [
+    {
+      "method": "real_only",
+      "mean_accuracy": 0.6599183673469388,
+      "ci95_low": 0.6528163265306123,
+      "ci95_high": 0.6670204081632654,
+      "delta_vs_real": 0.0
+    },
+    {
+      "method": "uces_raw",
+      "mean_accuracy": 0.6274285714285714,
+      "ci95_low": 0.6154285714285714,
+      "ci95_high": 0.6363265306122449,
+      "delta_vs_real": -0.032489795918367384
+    },
+    {
+      "method": "mass_capped_uces",
+      "mean_accuracy": 0.6581224489795918,
+      "ci95_low": 0.6485714285714286,
+      "ci95_high": 0.6671836734693877,
+      "delta_vs_real": -0.0017959183673469602
+    }
+  ],
+  "per_seed": [
+    {
+      "seed": 701,
+      "real_only": 0.6706122448979592,
+      "uces_raw": 0.6375510204081632,
+      "mass_capped_uces": 0.6730612244897959
+    },
+    {
+      "seed": 733,
+      "real_only": 0.6669387755102041,
+      "uces_raw": 0.6306122448979592,
+      "mass_capped_uces": 0.6559183673469388
+    },
+    {
+      "seed": 761,
+      "real_only": 0.66,
+      "uces_raw": 0.6379591836734694,
+      "mass_capped_uces": 0.6608163265306123
+    },
+    {
+      "seed": 797,
+      "real_only": 0.6522448979591837,
+      "uces_raw": 0.626938775510204,
+      "mass_capped_uces": 0.6595918367346939
+    },
+    {
+      "seed": 823,
+      "real_only": 0.649795918367347,
+      "uces_raw": 0.6040816326530613,
+      "mass_capped_uces": 0.6412244897959184
+    }
+  ],
+  "fraction_harm_recovered": 0.9447236180904517,
+  "max_total_mass": 0.16,
+  "per_signature_cap": 0.1
+}

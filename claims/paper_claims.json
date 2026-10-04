@@ -1,0 +1,40 @@
+{
+  "oracle_vs_pseudo": {
+    "real_only_accuracy": 0.6642857142857143,
+    "pseudo_accuracy": 0.6128571428571429,
+    "oracle_accuracy": 0.6085714285714285,
+    "uces_accuracy": 0.5868571428571429,
+    "pseudo_label_error_rate": 0.00045454545454545455,
+    "uces_label_error_rate": 0.0
+  },
+  "synthetic_mass": {
+    "correlation_mass_vs_delta": -0.987625267503731,
+    "worst_delta": -0.07107142857142867
+  },
+  "drift_auc": {
+    "heuristic": 0.9281640625,
+    "ewma": 0.9801171875,
+    "cusum": 0.98083984375,
+    "bayes_shift": 0.968984375
+  },
+  "mass_control": {
+    "fraction_harm_recovered": 0.9447236180904517,
+    "mass_capped_accuracy": 0.6581224489795918,
+    "raw_uces_accuracy": 0.6274285714285714
+  },
+  "response_level": {
+    "bayesian_overall_accuracy": 0.6887218045112782,
+    "always_personalize_overall_accuracy": 0.5932330827067669,
+    "always_personalize_overpersonalization_rate": 1.0,
+    "neural_ranker_accuracy": 0.4413533834586466
+  },
+  "response_level_repeated": {
+    "bayesian_overall_accuracy_mean": 0.6804511278195489,
+    "bayesian_overall_accuracy_sd": 0.01347103223095407,
+    "always_personalize_overall_accuracy_mean": 0.5912781954887217,
+    "always_personalize_overpersonalization_rate_mean": 1.0,
+    "generic_overall_accuracy_mean": 0.4168421052631579,
+    "neural_ranker_accuracy_mean": 0.4496240601503759,
+    "neural_ranker_accuracy_sd": 0.02243702753590492
+  }
+}

@@ -1,0 +1,85 @@
+item_id,scenario_type,scenario,left_system,right_system
+anti_personalization-009,anti_personalization,The query is factual and unrelated to known preferences.,personalized,baseline
+cold_start-000,cold_start,The system has little evidence about the user's preference.,personalized,baseline
+ambiguous-007,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,baseline,personalized
+cold_start-005,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+conflict-005,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+conflict-008,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+anti_personalization-004,anti_personalization,The query is factual and unrelated to known preferences.,baseline,personalized
+stable-004,stable,The user has repeatedly expressed a stable preference.,baseline,personalized
+ambiguous-003,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,baseline,personalized
+anti_personalization-008,anti_personalization,The query is factual and unrelated to known preferences.,baseline,personalized
+ambiguous-010,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,personalized,baseline
+stable-008,stable,The user has repeatedly expressed a stable preference.,personalized,baseline
+drift-000,drift,The user's previously stable preference has recently reversed.,baseline,personalized
+context-005,context,The user prefers concise answers at work but detailed answers for research.,baseline,personalized
+stable-003,stable,The user has repeatedly expressed a stable preference.,personalized,baseline
+conflict-009,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+ambiguous-001,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,personalized,baseline
+stable-001,stable,The user has repeatedly expressed a stable preference.,personalized,baseline
+stable-006,stable,The user has repeatedly expressed a stable preference.,baseline,personalized
+ambiguous-011,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,personalized,baseline
+conflict-011,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",personalized,baseline
+anti_personalization-005,anti_personalization,The query is factual and unrelated to known preferences.,baseline,personalized
+conflict-004,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",personalized,baseline
+ambiguous-006,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,baseline,personalized
+conflict-006,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",personalized,baseline
+context-010,context,The user prefers concise answers at work but detailed answers for research.,personalized,baseline
+anti_personalization-000,anti_personalization,The query is factual and unrelated to known preferences.,baseline,personalized
+drift-003,drift,The user's previously stable preference has recently reversed.,baseline,personalized
+ambiguous-002,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,personalized,baseline
+conflict-002,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+cold_start-006,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+drift-008,drift,The user's previously stable preference has recently reversed.,personalized,baseline
+ambiguous-005,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,baseline,personalized
+cold_start-002,cold_start,The system has little evidence about the user's preference.,personalized,baseline
+cold_start-004,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+context-002,context,The user prefers concise answers at work but detailed answers for research.,baseline,personalized
+drift-006,drift,The user's previously stable preference has recently reversed.,personalized,baseline
+context-009,context,The user prefers concise answers at work but detailed answers for research.,baseline,personalized
+context-008,context,The user prefers concise answers at work but detailed answers for research.,baseline,personalized
+drift-004,drift,The user's previously stable preference has recently reversed.,baseline,personalized
+cold_start-009,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+anti_personalization-006,anti_personalization,The query is factual and unrelated to known preferences.,personalized,baseline
+cold_start-011,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+cold_start-001,cold_start,The system has little evidence about the user's preference.,personalized,baseline
+ambiguous-009,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,personalized,baseline
+stable-005,stable,The user has repeatedly expressed a stable preference.,personalized,baseline
+stable-010,stable,The user has repeatedly expressed a stable preference.,personalized,baseline
+context-001,context,The user prefers concise answers at work but detailed answers for research.,personalized,baseline
+context-007,context,The user prefers concise answers at work but detailed answers for research.,baseline,personalized
+anti_personalization-011,anti_personalization,The query is factual and unrelated to known preferences.,baseline,personalized
+stable-000,stable,The user has repeatedly expressed a stable preference.,baseline,personalized
+drift-009,drift,The user's previously stable preference has recently reversed.,baseline,personalized
+drift-011,drift,The user's previously stable preference has recently reversed.,personalized,baseline
+drift-002,drift,The user's previously stable preference has recently reversed.,personalized,baseline
+anti_personalization-002,anti_personalization,The query is factual and unrelated to known preferences.,personalized,baseline
+ambiguous-004,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,personalized,baseline
+conflict-001,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+drift-010,drift,The user's previously stable preference has recently reversed.,personalized,baseline
+drift-007,drift,The user's previously stable preference has recently reversed.,baseline,personalized
+context-000,context,The user prefers concise answers at work but detailed answers for research.,baseline,personalized
+stable-002,stable,The user has repeatedly expressed a stable preference.,personalized,baseline
+cold_start-007,cold_start,The system has little evidence about the user's preference.,personalized,baseline
+anti_personalization-001,anti_personalization,The query is factual and unrelated to known preferences.,baseline,personalized
+conflict-003,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+stable-007,stable,The user has repeatedly expressed a stable preference.,baseline,personalized
+conflict-007,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+cold_start-008,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+context-006,context,The user prefers concise answers at work but detailed answers for research.,personalized,baseline
+conflict-000,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",personalized,baseline
+stable-011,stable,The user has repeatedly expressed a stable preference.,baseline,personalized
+context-004,context,The user prefers concise answers at work but detailed answers for research.,personalized,baseline
+cold_start-003,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+anti_personalization-003,anti_personalization,The query is factual and unrelated to known preferences.,personalized,baseline
+stable-009,stable,The user has repeatedly expressed a stable preference.,baseline,personalized
+conflict-010,conflict,"Two pieces of evidence conflict, and one is more recent and explicit.",baseline,personalized
+context-003,context,The user prefers concise answers at work but detailed answers for research.,baseline,personalized
+cold_start-010,cold_start,The system has little evidence about the user's preference.,baseline,personalized
+ambiguous-008,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,baseline,personalized
+drift-001,drift,The user's previously stable preference has recently reversed.,baseline,personalized
+anti_personalization-010,anti_personalization,The query is factual and unrelated to known preferences.,personalized,baseline
+anti_personalization-007,anti_personalization,The query is factual and unrelated to known preferences.,personalized,baseline
+drift-005,drift,The user's previously stable preference has recently reversed.,personalized,baseline
+ambiguous-000,ambiguous,Observed behavior weakly suggests a preference but evidence is uncertain.,personalized,baseline
+context-011,context,The user prefers concise answers at work but detailed answers for research.,personalized,baseline

@@ -1,0 +1,14 @@
+{
+  "id": "EXP-008",
+  "title": "Mass-capped mitigation",
+  "hypothesis": "Capping total synthetic evidence mass and duplicate signatures should recover the degradation.",
+  "setup": "Five independent seeds (701, 733, 761, 797, 823); compare real-only, raw UCES augmentation, and mass-capped UCES.",
+  "result": "Mean accuracy: real-only 0.660, raw UCES 0.627, mass-capped 0.658. Mass control recovers ~94.5% of the raw augmentation harm. It does not beat real-only.",
+  "interpretation": "A dataset-level intervention addresses the diagnosed failure, but this is mitigation rather than a new SOTA result.",
+  "next": "Test the same mechanism with different learners and external user distributions.",
+  "raw": [
+    "results/paper_mass_control.csv",
+    "results/paper_mass_control_seeds.csv"
+  ],
+  "status": "supported-mitigation"
+}

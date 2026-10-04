@@ -1,0 +1,181 @@
+case_id,key,context,should_personalize,target,neural_pred,query
+rl0070-answer_detail-casual,answer_detail,casual,True,1,2,Explain the recommendation to me.
+rl0070-privacy_sensitivity-general,privacy_sensitivity,general,True,2,1,How much personal context should be used here?
+rl0070-risk_tolerance-travel,risk_tolerance,travel,True,0,1,Choose an approach for this uncertain decision.
+rl0070-work_time-high_stakes,work_time,high_stakes,True,0,0,When should focused work be scheduled?
+rl0070-work_time-general,work_time,general,True,0,0,When should focused work be scheduled?
+rl0070-privacy_sensitivity-casual,privacy_sensitivity,casual,True,2,1,How much personal context should be used here?
+rl0070-planning_style-work,planning_style,work,True,0,1,Plan the next block of time.
+rl0070-answer_detail-work,answer_detail,work,True,1,2,Explain the recommendation to me.
+rl0070-planning_style-high_stakes,planning_style,high_stakes,True,0,1,Plan the next block of time.
+rl0070-autonomy-general,autonomy,general,True,1,2,How should the assistant proceed?
+rl0070-privacy_sensitivity-work,privacy_sensitivity,work,True,1,1,How much personal context should be used here?
+rl0070-travel_priority-casual,travel_priority,casual,True,0,2,Choose between otherwise viable travel options.
+rl0070-work_time-casual,work_time,casual,True,0,0,When should focused work be scheduled?
+rl0070-answer_detail-general,answer_detail,general,True,1,2,Explain the recommendation to me.
+rl0070-np-1,none,general,False,0,0,Which planet is known as the Red Planet?
+rl0070-autonomy-casual,autonomy,casual,True,1,2,How should the assistant proceed?
+rl0070-travel_priority-high_stakes,travel_priority,high_stakes,True,0,2,Choose between otherwise viable travel options.
+rl0070-planning_style-travel,planning_style,travel,True,0,1,Plan the next block of time.
+rl0070-risk_tolerance-high_stakes,risk_tolerance,high_stakes,True,0,1,Choose an approach for this uncertain decision.
+rl0070-answer_detail-travel,answer_detail,travel,True,1,2,Explain the recommendation to me.
+rl0070-work_time-travel,work_time,travel,True,0,0,When should focused work be scheduled?
+rl0070-privacy_sensitivity-high_stakes,privacy_sensitivity,high_stakes,True,2,1,How much personal context should be used here?
+rl0070-travel_priority-work,travel_priority,work,True,2,2,Choose between otherwise viable travel options.
+rl0070-planning_style-general,planning_style,general,True,0,1,Plan the next block of time.
+rl0070-answer_detail-high_stakes,answer_detail,high_stakes,True,1,2,Explain the recommendation to me.
+rl0070-planning_style-casual,planning_style,casual,True,0,1,Plan the next block of time.
+rl0070-risk_tolerance-work,risk_tolerance,work,True,0,1,Choose an approach for this uncertain decision.
+rl0070-autonomy-work,autonomy,work,True,1,2,How should the assistant proceed?
+rl0070-np-2,none,general,False,0,0,What is the chemical symbol for water?
+rl0070-risk_tolerance-casual,risk_tolerance,casual,True,2,1,Choose an approach for this uncertain decision.
+rl0070-travel_priority-general,travel_priority,general,True,0,2,Choose between otherwise viable travel options.
+rl0070-travel_priority-travel,travel_priority,travel,True,0,2,Choose between otherwise viable travel options.
+rl0070-np-0,none,general,False,0,0,What is 7 multiplied by 8?
+rl0070-autonomy-travel,autonomy,travel,True,1,2,How should the assistant proceed?
+rl0070-work_time-work,work_time,work,True,0,0,When should focused work be scheduled?
+rl0070-risk_tolerance-general,risk_tolerance,general,True,0,1,Choose an approach for this uncertain decision.
+rl0070-privacy_sensitivity-travel,privacy_sensitivity,travel,True,2,1,How much personal context should be used here?
+rl0070-autonomy-high_stakes,autonomy,high_stakes,True,1,2,How should the assistant proceed?
+rl0071-travel_priority-casual,travel_priority,casual,True,1,2,Choose between otherwise viable travel options.
+rl0071-answer_detail-general,answer_detail,general,True,1,0,Explain the recommendation to me.
+rl0071-work_time-casual,work_time,casual,True,0,0,When should focused work be scheduled?
+rl0071-planning_style-casual,planning_style,casual,True,1,1,Plan the next block of time.
+rl0071-autonomy-general,autonomy,general,True,2,2,How should the assistant proceed?
+rl0071-privacy_sensitivity-casual,privacy_sensitivity,casual,True,0,2,How much personal context should be used here?
+rl0071-privacy_sensitivity-general,privacy_sensitivity,general,True,0,1,How much personal context should be used here?
+rl0071-autonomy-work,autonomy,work,True,0,2,How should the assistant proceed?
+rl0071-risk_tolerance-casual,risk_tolerance,casual,True,1,1,Choose an approach for this uncertain decision.
+rl0071-travel_priority-work,travel_priority,work,True,1,2,Choose between otherwise viable travel options.
+rl0071-travel_priority-travel,travel_priority,travel,True,1,2,Choose between otherwise viable travel options.
+rl0071-np-1,none,general,False,0,0,Which planet is known as the Red Planet?
+rl0071-np-0,none,general,False,0,0,What is 7 multiplied by 8?
+rl0071-answer_detail-casual,answer_detail,casual,True,1,0,Explain the recommendation to me.
+rl0071-autonomy-casual,autonomy,casual,True,2,2,How should the assistant proceed?
+rl0071-risk_tolerance-high_stakes,risk_tolerance,high_stakes,True,1,1,Choose an approach for this uncertain decision.
+rl0071-travel_priority-general,travel_priority,general,True,1,2,Choose between otherwise viable travel options.
+rl0071-travel_priority-high_stakes,travel_priority,high_stakes,True,1,2,Choose between otherwise viable travel options.
+rl0071-answer_detail-travel,answer_detail,travel,True,1,0,Explain the recommendation to me.
+rl0071-autonomy-travel,autonomy,travel,True,2,2,How should the assistant proceed?
+rl0071-autonomy-high_stakes,autonomy,high_stakes,True,2,2,How should the assistant proceed?
+rl0071-work_time-work,work_time,work,True,1,0,When should focused work be scheduled?
+rl0071-planning_style-general,planning_style,general,True,1,1,Plan the next block of time.
+rl0071-work_time-general,work_time,general,True,0,0,When should focused work be scheduled?
+rl0071-risk_tolerance-general,risk_tolerance,general,True,1,1,Choose an approach for this uncertain decision.
+rl0071-privacy_sensitivity-high_stakes,privacy_sensitivity,high_stakes,True,0,2,How much personal context should be used here?
+rl0071-np-2,none,general,False,0,0,What is the chemical symbol for water?
+rl0071-risk_tolerance-work,risk_tolerance,work,True,1,1,Choose an approach for this uncertain decision.
+rl0071-answer_detail-high_stakes,answer_detail,high_stakes,True,0,0,Explain the recommendation to me.
+rl0071-work_time-travel,work_time,travel,True,0,0,When should focused work be scheduled?
+rl0071-work_time-high_stakes,work_time,high_stakes,True,0,0,When should focused work be scheduled?
+rl0071-privacy_sensitivity-work,privacy_sensitivity,work,True,0,1,How much personal context should be used here?
+rl0071-answer_detail-work,answer_detail,work,True,1,0,Explain the recommendation to me.
+rl0071-planning_style-high_stakes,planning_style,high_stakes,True,1,1,Plan the next block of time.
+rl0071-risk_tolerance-travel,risk_tolerance,travel,True,2,1,Choose an approach for this uncertain decision.
+rl0071-planning_style-travel,planning_style,travel,True,1,1,Plan the next block of time.
+rl0071-privacy_sensitivity-travel,privacy_sensitivity,travel,True,0,2,How much personal context should be used here?
+rl0071-planning_style-work,planning_style,work,True,1,1,Plan the next block of time.
+rl0072-privacy_sensitivity-high_stakes,privacy_sensitivity,high_stakes,True,1,1,How much personal context should be used here?
+rl0072-travel_priority-work,travel_priority,work,True,2,2,Choose between otherwise viable travel options.
+rl0072-risk_tolerance-travel,risk_tolerance,travel,True,1,1,Choose an approach for this uncertain decision.
+rl0072-np-1,none,general,False,0,0,Which planet is known as the Red Planet?
+rl0072-work_time-travel,work_time,travel,True,0,2,When should focused work be scheduled?
+rl0072-work_time-work,work_time,work,True,0,2,When should focused work be scheduled?
+rl0072-risk_tolerance-general,risk_tolerance,general,True,1,1,Choose an approach for this uncertain decision.
+rl0072-privacy_sensitivity-casual,privacy_sensitivity,casual,True,0,1,How much personal context should be used here?
+rl0072-planning_style-travel,planning_style,travel,True,0,1,Plan the next block of time.
+rl0072-risk_tolerance-high_stakes,risk_tolerance,high_stakes,True,1,1,Choose an approach for this uncertain decision.
+rl0072-np-0,none,general,False,0,0,What is 7 multiplied by 8?
+rl0072-answer_detail-work,answer_detail,work,True,0,2,Explain the recommendation to me.
+rl0072-privacy_sensitivity-work,privacy_sensitivity,work,True,1,1,How much personal context should be used here?
+rl0072-answer_detail-high_stakes,answer_detail,high_stakes,True,0,2,Explain the recommendation to me.
+rl0072-work_time-general,work_time,general,True,0,2,When should focused work be scheduled?
+rl0072-planning_style-high_stakes,planning_style,high_stakes,True,0,1,Plan the next block of time.
+rl0072-autonomy-high_stakes,autonomy,high_stakes,True,0,2,How should the assistant proceed?
+rl0072-risk_tolerance-work,risk_tolerance,work,True,1,1,Choose an approach for this uncertain decision.
+rl0072-autonomy-work,autonomy,work,True,0,2,How should the assistant proceed?
+rl0072-answer_detail-casual,answer_detail,casual,True,0,2,Explain the recommendation to me.
+rl0072-autonomy-travel,autonomy,travel,True,0,2,How should the assistant proceed?
+rl0072-privacy_sensitivity-travel,privacy_sensitivity,travel,True,1,1,How much personal context should be used here?
+rl0072-travel_priority-travel,travel_priority,travel,True,1,2,Choose between otherwise viable travel options.
+rl0072-np-2,none,general,False,0,0,What is the chemical symbol for water?
+rl0072-risk_tolerance-casual,risk_tolerance,casual,True,1,1,Choose an approach for this uncertain decision.
+rl0072-autonomy-general,autonomy,general,True,0,2,How should the assistant proceed?
+rl0072-answer_detail-travel,answer_detail,travel,True,2,2,Explain the recommendation to me.
+rl0072-planning_style-work,planning_style,work,True,0,1,Plan the next block of time.
+rl0072-travel_priority-casual,travel_priority,casual,True,1,2,Choose between otherwise viable travel options.
+rl0072-privacy_sensitivity-general,privacy_sensitivity,general,True,1,1,How much personal context should be used here?
+rl0072-work_time-casual,work_time,casual,True,2,2,When should focused work be scheduled?
+rl0072-autonomy-casual,autonomy,casual,True,0,2,How should the assistant proceed?
+rl0072-planning_style-casual,planning_style,casual,True,0,1,Plan the next block of time.
+rl0072-travel_priority-general,travel_priority,general,True,1,2,Choose between otherwise viable travel options.
+rl0072-answer_detail-general,answer_detail,general,True,0,2,Explain the recommendation to me.
+rl0072-work_time-high_stakes,work_time,high_stakes,True,0,2,When should focused work be scheduled?
+rl0072-travel_priority-high_stakes,travel_priority,high_stakes,True,1,2,Choose between otherwise viable travel options.
+rl0072-planning_style-general,planning_style,general,True,0,1,Plan the next block of time.
+rl0073-planning_style-high_stakes,planning_style,high_stakes,True,0,1,Plan the next block of time.
+rl0073-privacy_sensitivity-travel,privacy_sensitivity,travel,True,0,1,How much personal context should be used here?
+rl0073-travel_priority-general,travel_priority,general,True,0,2,Choose between otherwise viable travel options.
+rl0073-planning_style-work,planning_style,work,True,0,1,Plan the next block of time.
+rl0073-answer_detail-general,answer_detail,general,True,0,2,Explain the recommendation to me.
+rl0073-np-0,none,general,False,0,0,What is 7 multiplied by 8?
+rl0073-risk_tolerance-high_stakes,risk_tolerance,high_stakes,True,1,1,Choose an approach for this uncertain decision.
+rl0073-privacy_sensitivity-high_stakes,privacy_sensitivity,high_stakes,True,0,1,How much personal context should be used here?
+rl0073-travel_priority-casual,travel_priority,casual,True,0,2,Choose between otherwise viable travel options.
+rl0073-risk_tolerance-work,risk_tolerance,work,True,1,1,Choose an approach for this uncertain decision.
+rl0073-privacy_sensitivity-casual,privacy_sensitivity,casual,True,0,1,How much personal context should be used here?
+rl0073-work_time-high_stakes,work_time,high_stakes,True,1,1,When should focused work be scheduled?
+rl0073-answer_detail-casual,answer_detail,casual,True,0,2,Explain the recommendation to me.
+rl0073-planning_style-casual,planning_style,casual,True,0,1,Plan the next block of time.
+rl0073-autonomy-work,autonomy,work,True,1,2,How should the assistant proceed?
+rl0073-travel_priority-travel,travel_priority,travel,True,0,2,Choose between otherwise viable travel options.
+rl0073-answer_detail-travel,answer_detail,travel,True,0,2,Explain the recommendation to me.
+rl0073-autonomy-casual,autonomy,casual,True,1,2,How should the assistant proceed?
+rl0073-risk_tolerance-travel,risk_tolerance,travel,True,0,1,Choose an approach for this uncertain decision.
+rl0073-autonomy-general,autonomy,general,True,1,2,How should the assistant proceed?
+rl0073-privacy_sensitivity-work,privacy_sensitivity,work,True,2,1,How much personal context should be used here?
+rl0073-autonomy-travel,autonomy,travel,True,1,2,How should the assistant proceed?
+rl0073-answer_detail-high_stakes,answer_detail,high_stakes,True,1,2,Explain the recommendation to me.
+rl0073-planning_style-general,planning_style,general,True,0,1,Plan the next block of time.
+rl0073-privacy_sensitivity-general,privacy_sensitivity,general,True,0,1,How much personal context should be used here?
+rl0073-autonomy-high_stakes,autonomy,high_stakes,True,1,2,How should the assistant proceed?
+rl0073-answer_detail-work,answer_detail,work,True,0,2,Explain the recommendation to me.
+rl0073-travel_priority-high_stakes,travel_priority,high_stakes,True,0,2,Choose between otherwise viable travel options.
+rl0073-work_time-general,work_time,general,True,1,1,When should focused work be scheduled?
+rl0073-np-2,none,general,False,0,0,What is the chemical symbol for water?
+rl0073-risk_tolerance-general,risk_tolerance,general,True,1,1,Choose an approach for this uncertain decision.
+rl0073-np-1,none,general,False,0,0,Which planet is known as the Red Planet?
+rl0073-travel_priority-work,travel_priority,work,True,0,2,Choose between otherwise viable travel options.
+rl0073-risk_tolerance-casual,risk_tolerance,casual,True,1,1,Choose an approach for this uncertain decision.
+rl0073-planning_style-travel,planning_style,travel,True,1,1,Plan the next block of time.
+rl0073-work_time-work,work_time,work,True,1,1,When should focused work be scheduled?
+rl0073-work_time-casual,work_time,casual,True,1,1,When should focused work be scheduled?
+rl0073-work_time-travel,work_time,travel,True,1,1,When should focused work be scheduled?
+rl0074-risk_tolerance-general,risk_tolerance,general,True,0,1,Choose an approach for this uncertain decision.
+rl0074-risk_tolerance-high_stakes,risk_tolerance,high_stakes,True,0,1,Choose an approach for this uncertain decision.
+rl0074-travel_priority-casual,travel_priority,casual,True,2,2,Choose between otherwise viable travel options.
+rl0074-np-2,none,general,False,0,0,What is the chemical symbol for water?
+rl0074-work_time-travel,work_time,travel,True,0,2,When should focused work be scheduled?
+rl0074-autonomy-casual,autonomy,casual,True,1,2,How should the assistant proceed?
+rl0074-autonomy-work,autonomy,work,True,2,2,How should the assistant proceed?
+rl0074-work_time-work,work_time,work,True,0,2,When should focused work be scheduled?
+rl0074-risk_tolerance-casual,risk_tolerance,casual,True,1,1,Choose an approach for this uncertain decision.
+rl0074-planning_style-high_stakes,planning_style,high_stakes,True,0,1,Plan the next block of time.
+rl0074-risk_tolerance-work,risk_tolerance,work,True,0,1,Choose an approach for this uncertain decision.
+rl0074-travel_priority-high_stakes,travel_priority,high_stakes,True,2,2,Choose between otherwise viable travel options.
+rl0074-privacy_sensitivity-travel,privacy_sensitivity,travel,True,1,1,How much personal context should be used here?
+rl0074-privacy_sensitivity-work,privacy_sensitivity,work,True,1,1,How much personal context should be used here?
+rl0074-work_time-general,work_time,general,True,0,2,When should focused work be scheduled?
+rl0074-travel_priority-work,travel_priority,work,True,2,2,Choose between otherwise viable travel options.
+rl0074-answer_detail-high_stakes,answer_detail,high_stakes,True,0,2,Explain the recommendation to me.
+rl0074-answer_detail-casual,answer_detail,casual,True,0,2,Explain the recommendation to me.
+rl0074-planning_style-work,planning_style,work,True,0,1,Plan the next block of time.
+rl0074-answer_detail-travel,answer_detail,travel,True,1,2,Explain the recommendation to me.
+rl0074-risk_tolerance-travel,risk_tolerance,travel,True,0,1,Choose an approach for this uncertain decision.
+rl0074-privacy_sensitivity-general,privacy_sensitivity,general,True,1,1,How much personal context should be used here?
+rl0074-np-0,none,general,False,0,0,What is 7 multiplied by 8?
+rl0074-planning_style-general,planning_style,general,True,0,1,Plan the next block of time.
+rl0074-answer_detail-work,answer_detail,work,True,0,2,Explain the recommendation to me.
+rl0074-planning_style-casual,planning_style,casual,True,0,1,Plan the next block of time.
+rl0074-answer_detail-general,answer_detail,general,True,0,2,Explain the recommendation to me.
+rl0074-travel_priority-travel,travel_priority,travel,True,2,2,Choose between otherwise viable travel options.

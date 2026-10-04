@@ -1,0 +1,13 @@
+{
+  "id": "EXP-001",
+  "title": "Cold-start: retrieval vs learned personalization",
+  "hypothesis": "A learned structured personalization model should beat sparse retrieval when user evidence is scarce.",
+  "setup": "Controlled synthetic users; interaction counts 0/1/3/5/10/20/50; compare retrieval-weighted voting, learned real-only, and synthetic-augmented learner.",
+  "result": "At 5 interactions: learned real-only 0.623 accuracy vs retrieval 0.436. At 50 interactions retrieval catches up and slightly exceeds the learned real-only baseline (0.963 vs 0.953).",
+  "interpretation": "Learning helps most in the sparse-data regime; retrieval becomes competitive once history is dense.",
+  "next": "Focus claims on cold-start/sample-efficiency rather than universal superiority over retrieval.",
+  "raw": [
+    "results/benchmark.csv"
+  ],
+  "status": "supported-with-boundary"
+}

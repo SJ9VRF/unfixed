@@ -1,0 +1,13 @@
+{
+  "id": "EXP-004",
+  "title": "Selector proxy ablation",
+  "hypothesis": "Selection policies that score higher on verified information value should create better training data.",
+  "setup": "Compare random, uncertainty, diversity, failure-driven, and information-gain-style selection under the same verifier.",
+  "result": "Failure-driven and information-gain-style selection score ~0.758 verified information value vs random 0.649.",
+  "interpretation": "The selector successfully changes the proxy distribution, but this says nothing yet about downstream learning utility.",
+  "next": "Run the selected samples through actual downstream training rather than optimizing the proxy in isolation.",
+  "raw": [
+    "results/selection_ablation.csv"
+  ],
+  "status": "proxy-supported"
+}

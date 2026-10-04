@@ -1,0 +1,19 @@
+{
+  "source_module": "evals.suite.v3_runner.repeated_seed_stability",
+  "seeds": [
+    7,
+    13,
+    29,
+    41,
+    73
+  ],
+  "n_train": 140,
+  "n_test": 60,
+  "interaction_counts": [
+    3,
+    5,
+    10,
+    20,
+    50
+  ]
+}

@@ -1,0 +1,5 @@
+method,roc_auc
+heuristic,0.9281640625000002
+ewma,0.9801171875
+cusum,0.98083984375
+bayes_shift,0.968984375

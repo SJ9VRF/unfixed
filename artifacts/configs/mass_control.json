@@ -1,0 +1,14 @@
+{
+  "source_module": "evals.suite.paper_runner.mass_aware_mitigation",
+  "seeds": [
+    701,
+    733,
+    761,
+    797,
+    823
+  ],
+  "n_train": 140,
+  "n_test": 70,
+  "max_total_mass": 0.16,
+  "per_signature_cap": 0.1
+}

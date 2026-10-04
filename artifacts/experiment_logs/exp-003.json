@@ -1,0 +1,14 @@
+{
+  "id": "EXP-003",
+  "title": "Repeated-seed stability",
+  "hypothesis": "The context result should survive independent simulator/training seeds.",
+  "setup": "Five seeds (7, 13, 29, 41, 73); 140 train / 60 held-out users per seed; 3\u201350 real interactions.",
+  "result": "Mean context accuracy rises from 0.512 at 3 interactions to 0.883 at 50; 95% interval at 50: 0.873\u20130.894.",
+  "interpretation": "The controlled context result is directionally stable across five independent seeds.",
+  "next": "Keep five-seed limitation explicit; do not treat it as high-powered external evidence.",
+  "raw": [
+    "results/v3_seed_stability.csv",
+    "results/v3_seed_summary.csv"
+  ],
+  "status": "supported"
+}

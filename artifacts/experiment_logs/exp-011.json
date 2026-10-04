@@ -1,0 +1,13 @@
+{
+  "id": "EXP-011",
+  "title": "Selective personalization risk\u2013coverage",
+  "hypothesis": "Confidence should support a useful abstention/restraint policy.",
+  "setup": "250 controlled users; sweep confidence thresholds and report coverage vs selective risk.",
+  "result": "At threshold 0.65, coverage is 0.815 and selective accuracy 0.798, compared with 0.768 accuracy at near-full coverage (threshold 0.35).",
+  "interpretation": "Confidence contains useful information for selective personalization, though the curve is not monotonic at the highest thresholds.",
+  "next": "Use restraint as a behavior policy rather than forcing personalization everywhere.",
+  "raw": [
+    "results/paper_risk_coverage.csv"
+  ],
+  "status": "supported"
+}

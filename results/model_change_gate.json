@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "name": "bayesian_response_accuracy_floor",
+      "observed": 0.6804511278195489,
+      "op": ">=",
+      "passed": true,
+      "threshold": 0.66
+    },
+    {
+      "name": "bayesian_overpersonalization_ceiling",
+      "observed": 0.0,
+      "op": "<=",
+      "passed": true,
+      "threshold": 0.02
+    },
+    {
+      "name": "mass_capped_synthetic_regression_ceiling",
+      "observed": 0.0017959183673469602,
+      "op": "<=",
+      "passed": true,
+      "threshold": 0.01
+    },
+    {
+      "name": "frontier_eval_smoke_pass_rate",
+      "observed": 1.0,
+      "op": ">=",
+      "passed": true,
+      "threshold": 1.0
+    }
+  ],
+  "passed": true
+}

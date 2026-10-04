@@ -1,0 +1,87 @@
+{
+  "context_benchmark": [
+    {
+      "method": "context_aware_inference",
+      "n_interactions": 1,
+      "global_accuracy": 0.7444444444444445,
+      "context_accuracy": 0.7155555555555555
+    },
+    {
+      "method": "trainable_context_model",
+      "n_interactions": 1,
+      "global_accuracy": "",
+      "context_accuracy": 0.39746031746031746
+    },
+    {
+      "method": "context_aware_inference",
+      "n_interactions": 3,
+      "global_accuracy": 0.8247863247863247,
+      "context_accuracy": 0.7854700854700855
+    },
+    {
+      "method": "trainable_context_model",
+      "n_interactions": 3,
+      "global_accuracy": "",
+      "context_accuracy": 0.5088888888888888
+    },
+    {
+      "method": "context_aware_inference",
+      "n_interactions": 5,
+      "global_accuracy": 0.8005780346820809,
+      "context_accuracy": 0.7670520231213873
+    },
+    {
+      "method": "trainable_context_model",
+      "n_interactions": 5,
+      "global_accuracy": "",
+      "context_accuracy": 0.5793650793650794
+    },
+    {
+      "method": "context_aware_inference",
+      "n_interactions": 10,
+      "global_accuracy": 0.8463114754098361,
+      "context_accuracy": 0.8028688524590164
+    },
+    {
+      "method": "trainable_context_model",
+      "n_interactions": 10,
+      "global_accuracy": "",
+      "context_accuracy": 0.6876190476190476
+    },
+    {
+      "method": "context_aware_inference",
+      "n_interactions": 20,
+      "global_accuracy": 0.8818635607321131,
+      "context_accuracy": 0.8276206322795341
+    },
+    {
+      "method": "trainable_context_model",
+      "n_interactions": 20,
+      "global_accuracy": "",
+      "context_accuracy": 0.8063492063492064
+    },
+    {
+      "method": "context_aware_inference",
+      "n_interactions": 50,
+      "global_accuracy": 0.9619047619047619,
+      "context_accuracy": 0.893968253968254
+    },
+    {
+      "method": "trainable_context_model",
+      "n_interactions": 50,
+      "global_accuracy": "",
+      "context_accuracy": 0.8907936507936508
+    }
+  ],
+  "anti_personalization_gate": {
+    "held_out_accuracy": 0.875,
+    "brier_score": 0.06458387478559602,
+    "n_train": 42,
+    "n_test": 16
+  },
+  "boundary_selection": {
+    "random": 0.22054445562066327,
+    "information_gain": 0.20957715743114624,
+    "decision_boundary": 0.2957051621548902
+  }
+}

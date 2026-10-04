@@ -1,0 +1,91 @@
+{
+  "interpretation": "Seed-level exact tests are deliberately conservative. With five non-tied paired seeds, even a 5/5 directional result has a two-sided exact sign-test p-value of 0.0625. These summaries therefore quantify consistency and effect size rather than licensing strong significance claims.",
+  "mass_control": {
+    "raw_vs_real_only": {
+      "n_pairs": 5,
+      "mean_delta": -0.032489795918367384,
+      "sd_delta": 0.00936376704525483,
+      "min_delta": -0.04571428571428571,
+      "max_delta": -0.022040816326530654,
+      "wins": 0,
+      "losses": 5,
+      "ties": 0,
+      "exact_sign_test_two_sided_p": 0.0625,
+      "paired_standardized_effect_dz": -3.4697356054828243
+    },
+    "mass_capped_vs_raw": {
+      "n_pairs": 5,
+      "mean_delta": 0.03069387755102042,
+      "sd_delta": 0.006306089425975213,
+      "min_delta": 0.02285714285714291,
+      "max_delta": 0.037142857142857144,
+      "wins": 5,
+      "losses": 0,
+      "ties": 0,
+      "exact_sign_test_two_sided_p": 0.0625,
+      "paired_standardized_effect_dz": 4.867339404447746
+    },
+    "mass_capped_vs_real_only": {
+      "n_pairs": 5,
+      "mean_delta": -0.0017959183673469602,
+      "sd_delta": 0.007736820557343065,
+      "min_delta": -0.011020408163265327,
+      "max_delta": 0.007346938775510181,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0,
+      "exact_sign_test_two_sided_p": 1.0,
+      "paired_standardized_effect_dz": -0.23212614975830645
+    }
+  },
+  "response_level": {
+    "bayesian_vs_always_personalize": {
+      "n_pairs": 5,
+      "mean_delta": 0.08917293233082708,
+      "sd_delta": 0.006052514826315234,
+      "min_delta": 0.08195488721804511,
+      "max_delta": 0.09548872180451129,
+      "wins": 5,
+      "losses": 0,
+      "ties": 0,
+      "exact_sign_test_two_sided_p": 0.0625,
+      "paired_standardized_effect_dz": 14.733203451748583
+    },
+    "bayesian_vs_generic": {
+      "n_pairs": 5,
+      "mean_delta": 0.26360902255639096,
+      "sd_delta": 0.026612717961658882,
+      "min_delta": 0.22556390977443608,
+      "max_delta": 0.29699248120300753,
+      "wins": 5,
+      "losses": 0,
+      "ties": 0,
+      "exact_sign_test_two_sided_p": 0.0625,
+      "paired_standardized_effect_dz": 9.905377682060667
+    },
+    "bayesian_vs_last_event": {
+      "n_pairs": 5,
+      "mean_delta": 0.011127819548872164,
+      "sd_delta": 0.0072000087939092326,
+      "min_delta": 0.0015037593984962294,
+      "max_delta": 0.018045112781954864,
+      "wins": 5,
+      "losses": 0,
+      "ties": 0,
+      "exact_sign_test_two_sided_p": 0.0625,
+      "paired_standardized_effect_dz": 1.5455286052269295
+    },
+    "inferred_state_vs_last_event": {
+      "n_pairs": 5,
+      "mean_delta": 0.0009022556390977376,
+      "sd_delta": 0.004233289702333601,
+      "min_delta": -0.0052631578947368585,
+      "max_delta": 0.004511278195488688,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0,
+      "exact_sign_test_two_sided_p": 1.0,
+      "paired_standardized_effect_dz": 0.21313344999761513
+    }
+  }
+}

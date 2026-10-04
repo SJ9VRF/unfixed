@@ -1,0 +1,62 @@
+{
+  "summary": [
+    {
+      "method": "real_only",
+      "accuracy": 0.6642857142857143,
+      "ci95_low": 0.6428571428571428,
+      "ci95_high": 0.6845714285714286
+    },
+    {
+      "method": "pseudo",
+      "accuracy": 0.6128571428571429,
+      "ci95_low": 0.5888571428571429,
+      "ci95_high": 0.6382857142857143
+    },
+    {
+      "method": "oracle",
+      "accuracy": 0.6088571428571429,
+      "ci95_low": 0.5848571428571429,
+      "ci95_high": 0.6331428571428571
+    },
+    {
+      "method": "uces",
+      "accuracy": 0.5868571428571429,
+      "ci95_low": 0.5605714285714286,
+      "ci95_high": 0.6134285714285714
+    }
+  ],
+  "paired": {
+    "pseudo": {
+      "mean_delta": -0.051428571428571435,
+      "ci95": [
+        -0.06685714285714286,
+        -0.03514285714285715
+      ],
+      "bootstrap_two_sided_p": 0.0
+    },
+    "oracle": {
+      "mean_delta": -0.05542857142857144,
+      "ci95": [
+        -0.07285714285714287,
+        -0.03885714285714287
+      ],
+      "bootstrap_two_sided_p": 0.0
+    },
+    "uces": {
+      "mean_delta": -0.07742857142857143,
+      "ci95": [
+        -0.09771428571428573,
+        -0.05628571428571428
+      ],
+      "bootstrap_two_sided_p": 0.0
+    }
+  },
+  "label_stats": {
+    "pseudo_wrong": 1,
+    "pseudo_total": 2200,
+    "uces_wrong": 0,
+    "uces_total": 2173,
+    "pseudo_label_error_rate": 0.00045454545454545455,
+    "uces_label_error_rate": 0.0
+  }
+}

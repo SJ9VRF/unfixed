@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite The Unfixed User."
+title: "The Unfixed User: When Synthetic Experience Hurts Continual Personalization"
+version: 0.7.0
+type: software
+authors:
+  - family-names: Yavary
+    given-names: Aura
+license: MIT

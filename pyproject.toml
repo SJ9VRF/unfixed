@@ -1,0 +1,29 @@
+[project]
+name = "the-unfixed-user"
+version = "0.7.0"
+description = "Calibrated continual personalization under sparse, context-dependent, and changing user preferences"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.7",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scikit-learn>=1.4",
+  "fastapi>=0.110",
+  "uvicorn>=0.29"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+paper = ["torch>=2.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.coverage.run]
+omit = [
+  "evals/suite/*runner.py",
+  "evals/*/run.py",
+  "dashboard/build.py",
+  "scripts/*",
+  "tests/*"
+]

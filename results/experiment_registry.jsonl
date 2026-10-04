@@ -1,0 +1,1 @@
+{"artifacts": ["results/v3_results.json", "results/robustness.json", "dashboard/index.html"], "config": {"offline": true, "suite": "v1-v3+robustness", "version": "0.5.0"}, "git_commit": null, "metrics": {"status": "completed"}, "name": "v5_full_benchmark", "python": "3.13.5", "run_id": "f3ba7e1d22569e97"}

@@ -1,0 +1,12 @@
+{
+  "version": "0.5.0",
+  "tolerance": 0.002,
+  "claims": {
+    "context_accuracy_50_mean": 0.883,
+    "synthetic_real_only_10": 0.663,
+    "synthetic_uncertainty_10": 0.663,
+    "synthetic_decision_boundary_10": 0.631,
+    "noise_0_accuracy": 0.953,
+    "noise_032_accuracy": 0.751
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "tolerance": 0.002,
+  "checks": {
+    "context_accuracy_50_mean": {
+      "expected": 0.883,
+      "actual": 0.8829523809523809,
+      "delta": -4.7619047619074095e-05,
+      "ok": true
+    },
+    "synthetic_real_only_10": {
+      "expected": 0.663,
+      "actual": 0.6628571428571429,
+      "delta": -0.00014285714285711126,
+      "ok": true
+    },
+    "synthetic_uncertainty_10": {
+      "expected": 0.663,
+      "actual": 0.6632142857142858,
+      "delta": 0.0002142857142857224,
+      "ok": true
+    },
+    "synthetic_decision_boundary_10": {
+      "expected": 0.631,
+      "actual": 0.6307142857142857,
+      "delta": -0.00028571428571433355,
+      "ok": true
+    },
+    "noise_0_accuracy": {
+      "expected": 0.953,
+      "actual": 0.9530612244897958,
+      "delta": 6.122448979584139e-05,
+      "ok": true
+    },
+    "noise_032_accuracy": {
+      "expected": 0.751,
+      "actual": 0.751360544217687,
+      "delta": 0.00036054421768705325,
+      "ok": true
+    }
+  }
+}

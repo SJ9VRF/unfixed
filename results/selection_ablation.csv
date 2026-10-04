@@ -1,0 +1,6 @@
+policy,mean_verified_information_value
+random,0.6488493027530561
+uncertainty,0.7568936225219874
+diversity,0.6526266775752471
+failure_driven,0.758219893157857
+information_gain,0.758219893157857

@@ -1,0 +1,14 @@
+{
+  "id": "EXP-007",
+  "title": "Synthetic evidence-mass sweep",
+  "hypothesis": "If distributional reweighting is the mechanism, harm should grow with injected synthetic evidence mass.",
+  "setup": "25 count \u00d7 reliability settings; vary synthetic count and reliability while holding the learner/evaluation fixed.",
+  "result": "Synthetic evidence mass is strongly negatively associated with downstream delta; recorded correlation is approximately -0.988 in the claim contract.",
+  "interpretation": "The failure tracks how much correlated evidence is injected, not merely whether each label is correct.",
+  "next": "Move intervention from sample scoring to dataset composition.",
+  "raw": [
+    "results/paper_synthetic_mass_sweep.csv",
+    "results/paper_results.json"
+  ],
+  "status": "supported"
+}

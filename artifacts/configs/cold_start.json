@@ -1,0 +1,13 @@
+{
+  "source": "results/benchmark.csv",
+  "interaction_counts": [
+    0,
+    1,
+    3,
+    5,
+    10,
+    20,
+    50
+  ],
+  "note": "Frozen output table; implementation parameters live in evaluation source."
+}

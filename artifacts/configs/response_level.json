@@ -1,0 +1,5 @@
+{
+  "source_module": "evals.response_level.repeated",
+  "n_seeds": 5,
+  "note": "Exact seed list and train/test counts are stored in results/paper_response_level_repeated.json."
+}

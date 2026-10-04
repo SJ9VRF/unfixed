@@ -1,0 +1,316 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Unfixed User — Evaluation Dashboard</title><style>body{font-family:Inter,Arial,sans-serif;margin:0;background:#090b0f;color:#eef2f6}main{max-width:1180px;margin:auto;padding:56px 24px}h1{font-size:54px;margin:0 0 8px}.sub{color:#a9b2bf;font-size:20px;max-width:900px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:32px 0}.card{background:#141922;border:1px solid #2a3240;border-radius:16px;padding:20px}.card span{color:#99a5b5;font-size:13px;text-transform:uppercase;letter-spacing:.08em}.card h3{font-size:30px;margin:8px 0}.card p{color:#a9b2bf;margin:0}table{width:100%;border-collapse:collapse;background:#11151c;margin:12px 0 34px}th,td{padding:11px;border-bottom:1px solid #28303d;text-align:left}th{background:#151922}pre{white-space:pre-wrap;background:#11151c;padding:18px;border-radius:12px;max-height:500px;overflow:auto}.note{border-left:3px solid #a9b2bf;padding:12px 18px;background:#11151c;color:#c7ced8}@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}h1{font-size:42px}}</style></head><body><main><h1>The Unfixed User</h1><p class="sub">Self-evolving personalized agents from sparse feedback: context, calibration, drift, relevance gating, counterfactual experience and downstream utility evaluation.</p><div class='grid'>
+      <div class='card'><span>Context accuracy @50</span><h3>0.883</h3><p>mean across 5 seeds</p></div>
+      <div class='card'><span>Semantic gate</span><h3>87.5%</h3><p>Brier 0.065</p></div>
+      <div class='card'><span>Drift detection</span><h3>AUC 1.000</h3><p>controlled reversal benchmark</p></div>
+      <div class='card'><span>Synthetic utility</span><h3>0.663</h3><p>uncertainty vs real-only 0.663</p></div>
+    </div><div class="note"><b>Scientific contract:</b> synthetic examples are useful only if they improve held-out behavior. Boundary targeting alone is not counted as a win.</div><h2>Cold-start benchmark</h2><table><thead><tr><th>Method</th><th>Interactions</th><th>Accuracy</th><th>Coverage</th><th>ECE</th><th>High-conf error</th></tr></thead><tbody><tr><td>retrieval_weighted_vote</td><td>0</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr><tr><td>learned_real_only</td><td>0</td><td>0.356</td><td>1.000</td><td>0.048</td><td>0.000</td></tr><tr><td>learned_synthetic_augmented</td><td>0</td><td>0.356</td><td>1.000</td><td>0.045</td><td>0.000</td></tr><tr><td>retrieval_weighted_vote</td><td>1</td><td>0.123</td><td>0.143</td><td>0.016</td><td>0.140</td></tr><tr><td>learned_real_only</td><td>1</td><td>0.433</td><td>1.000</td><td>0.043</td><td>0.011</td></tr><tr><td>learned_synthetic_augmented</td><td>1</td><td>0.431</td><td>1.000</td><td>0.027</td><td>0.006</td></tr><tr><td>retrieval_weighted_vote</td><td>3</td><td>0.299</td><td>0.357</td><td>0.017</td><td>0.136</td></tr><tr><td>learned_real_only</td><td>3</td><td>0.534</td><td>1.000</td><td>0.034</td><td>0.024</td></tr><tr><td>learned_synthetic_augmented</td><td>3</td><td>0.523</td><td>1.000</td><td>0.012</td><td>0.014</td></tr><tr><td>retrieval_weighted_vote</td><td>5</td><td>0.436</td><td>0.516</td><td>0.019</td><td>0.119</td></tr><tr><td>learned_real_only</td><td>5</td><td>0.623</td><td>1.000</td><td>0.029</td><td>0.026</td></tr><tr><td>learned_synthetic_augmented</td><td>5</td><td>0.606</td><td>1.000</td><td>0.031</td><td>0.023</td></tr><tr><td>retrieval_weighted_vote</td><td>10</td><td>0.661</td><td>0.761</td><td>0.035</td><td>0.086</td></tr><tr><td>learned_real_only</td><td>10</td><td>0.743</td><td>1.000</td><td>0.027</td><td>0.034</td></tr><tr><td>learned_synthetic_augmented</td><td>10</td><td>0.720</td><td>1.000</td><td>0.035</td><td>0.039</td></tr><tr><td>retrieval_weighted_vote</td><td>20</td><td>0.854</td><td>0.946</td><td>0.067</td><td>0.036</td></tr><tr><td>learned_real_only</td><td>20</td><td>0.847</td><td>1.000</td><td>0.024</td><td>0.039</td></tr><tr><td>learned_synthetic_augmented</td><td>20</td><td>0.839</td><td>1.000</td><td>0.026</td><td>0.043</td></tr><tr><td>retrieval_weighted_vote</td><td>50</td><td>0.963</td><td>1.000</td><td>0.079</td><td>0.004</td></tr><tr><td>learned_real_only</td><td>50</td><td>0.953</td><td>1.000</td><td>0.029</td><td>0.029</td></tr><tr><td>learned_synthetic_augmented</td><td>50</td><td>0.934</td><td>1.000</td><td>0.027</td><td>0.034</td></tr></tbody></table><h2>Context-conditioned benchmark</h2><table><thead><tr><th>Method</th><th>Interactions</th><th>Global accuracy</th><th>Context accuracy</th></tr></thead><tbody><tr><td>context_aware_inference</td><td>1</td><td>0.744</td><td>0.716</td></tr><tr><td>trainable_context_model</td><td>1</td><td>-</td><td>0.397</td></tr><tr><td>context_aware_inference</td><td>3</td><td>0.825</td><td>0.785</td></tr><tr><td>trainable_context_model</td><td>3</td><td>-</td><td>0.509</td></tr><tr><td>context_aware_inference</td><td>5</td><td>0.801</td><td>0.767</td></tr><tr><td>trainable_context_model</td><td>5</td><td>-</td><td>0.579</td></tr><tr><td>context_aware_inference</td><td>10</td><td>0.846</td><td>0.803</td></tr><tr><td>trainable_context_model</td><td>10</td><td>-</td><td>0.688</td></tr><tr><td>context_aware_inference</td><td>20</td><td>0.882</td><td>0.828</td></tr><tr><td>trainable_context_model</td><td>20</td><td>-</td><td>0.806</td></tr><tr><td>context_aware_inference</td><td>50</td><td>0.962</td><td>0.894</td></tr><tr><td>trainable_context_model</td><td>50</td><td>-</td><td>0.891</td></tr></tbody></table><h2>Repeated-seed stability</h2><table><thead><tr><th>Interactions</th><th>Mean</th><th>SE</th><th>CI low</th><th>CI high</th><th>Seeds</th></tr></thead><tbody><tr><td>3</td><td>0.5124761904761905</td><td>0.006468833356074504</td><td>0.5014285714285714</td><td>0.5235238095238095</td><td>5</td></tr><tr><td>5</td><td>0.5781904761904763</td><td>0.006139718651918546</td><td>0.5654285714285715</td><td>0.5866666666666667</td><td>5</td></tr><tr><td>10</td><td>0.6988571428571428</td><td>0.0028034640056257194</td><td>0.6939047619047619</td><td>0.7038095238095238</td><td>5</td></tr><tr><td>20</td><td>0.8031428571428572</td><td>0.003937147925446541</td><td>0.7963809523809524</td><td>0.8101904761904762</td><td>5</td></tr><tr><td>50</td><td>0.8829523809523809</td><td>0.00550283373711418</td><td>0.8727619047619047</td><td>0.8935238095238095</td><td>5</td></tr></tbody></table><h2>Synthetic data: downstream utility</h2><table><thead><tr><th>Method</th><th>Mean context accuracy</th><th>CI low</th><th>CI high</th></tr></thead><tbody><tr><td>real_only</td><td>0.6628571428571429</td><td>0.6292857142857142</td><td>0.6953571428571428</td></tr><tr><td>random</td><td>0.5996428571428571</td><td>0.5689285714285715</td><td>0.6296428571428572</td></tr><tr><td>uncertainty</td><td>0.6632142857142858</td><td>0.6296428571428572</td><td>0.6946428571428571</td></tr><tr><td>diversity</td><td>0.6053571428571429</td><td>0.5728571428571428</td><td>0.6385714285714286</td></tr><tr><td>failure_driven</td><td>0.6553571428571429</td><td>0.6232142857142857</td><td>0.6889285714285714</td></tr><tr><td>information_gain</td><td>0.6553571428571429</td><td>0.6228571428571429</td><td>0.6871428571428572</td></tr><tr><td>decision_boundary</td><td>0.6307142857142857</td><td>0.5992857142857143</td><td>0.6617857142857143</td></tr></tbody></table><h2>Noise stress</h2><table><thead><tr><th>Noise</th><th>Mean accuracy</th><th>CI low</th><th>CI high</th></tr></thead><tbody><tr><td>0.0</td><td>0.9530612244897958</td><td>0.9306122448979591</td><td>0.9714285714285714</td></tr><tr><td>0.08</td><td>0.936734693877551</td><td>0.9142857142857143</td><td>0.9571428571428572</td></tr><tr><td>0.16</td><td>0.8809523809523809</td><td>0.8503401360544218</td><td>0.9119047619047619</td></tr><tr><td>0.24</td><td>0.8214285714285714</td><td>0.786734693877551</td><td>0.8561224489795919</td></tr><tr><td>0.32</td><td>0.751360544217687</td><td>0.7119047619047618</td><td>0.7887755102040817</td></tr></tbody></table><h2>Full diagnostics</h2><pre>{
+  &quot;seed_stability&quot;: {
+    &quot;runs&quot;: [
+      {
+        &quot;seed&quot;: 7,
+        &quot;n_interactions&quot;: 3,
+        &quot;context_accuracy&quot;: 0.5285714285714286
+      },
+      {
+        &quot;seed&quot;: 7,
+        &quot;n_interactions&quot;: 5,
+        &quot;context_accuracy&quot;: 0.5904761904761905
+      },
+      {
+        &quot;seed&quot;: 7,
+        &quot;n_interactions&quot;: 10,
+        &quot;context_accuracy&quot;: 0.7038095238095238
+      },
+      {
+        &quot;seed&quot;: 7,
+        &quot;n_interactions&quot;: 20,
+        &quot;context_accuracy&quot;: 0.8061904761904762
+      },
+      {
+        &quot;seed&quot;: 7,
+        &quot;n_interactions&quot;: 50,
+        &quot;context_accuracy&quot;: 0.900952380952381
+      },
+      {
+        &quot;seed&quot;: 13,
+        &quot;n_interactions&quot;: 3,
+        &quot;context_accuracy&quot;: 0.5071428571428571
+      },
+      {
+        &quot;seed&quot;: 13,
+        &quot;n_interactions&quot;: 5,
+        &quot;context_accuracy&quot;: 0.5828571428571429
+      },
+      {
+        &quot;seed&quot;: 13,
+        &quot;n_interactions&quot;: 10,
+        &quot;context_accuracy&quot;: 0.6919047619047619
+      },
+      {
+        &quot;seed&quot;: 13,
+        &quot;n_interactions&quot;: 20,
+        &quot;context_accuracy&quot;: 0.7914285714285715
+      },
+      {
+        &quot;seed&quot;: 13,
+        &quot;n_interactions&quot;: 50,
+        &quot;context_accuracy&quot;: 0.8823809523809524
+      },
+      {
+        &quot;seed&quot;: 29,
+        &quot;n_interactions&quot;: 3,
+        &quot;context_accuracy&quot;: 0.5266666666666666
+      },
+      {
+        &quot;seed&quot;: 29,
+        &quot;n_interactions&quot;: 5,
+        &quot;context_accuracy&quot;: 0.5838095238095238
+      },
+      {
+        &quot;seed&quot;: 29,
+        &quot;n_interactions&quot;: 10,
+        &quot;context_accuracy&quot;: 0.7
+      },
+      {
+        &quot;seed&quot;: 29,
+        &quot;n_interactions&quot;: 20,
+        &quot;context_accuracy&quot;: 0.799047619047619
+      },
+      {
+        &quot;seed&quot;: 29,
+        &quot;n_interactions&quot;: 50,
+        &quot;context_accuracy&quot;: 0.8828571428571428
+      },
+      {
+        &quot;seed&quot;: 41,
+        &quot;n_interactions&quot;: 3,
+        &quot;context_accuracy&quot;: 0.4957142857142857
+      },
+      {
+        &quot;seed&quot;: 41,
+        &quot;n_interactions&quot;: 5,
+        &quot;context_accuracy&quot;: 0.579047619047619
+      },
+      {
+        &quot;seed&quot;: 41,
+        &quot;n_interactions&quot;: 10,
+        &quot;context_accuracy&quot;: 0.7057142857142857
+      },
+      {
+        &quot;seed&quot;: 41,
+        &quot;n_interactions&quot;: 20,
+        &quot;context_accuracy&quot;: 0.8152380952380952
+      },
+      {
+        &quot;seed&quot;: 41,
+        &quot;n_interactions&quot;: 50,
+        &quot;context_accuracy&quot;: 0.8823809523809524
+      },
+      {
+        &quot;seed&quot;: 73,
+        &quot;n_interactions&quot;: 3,
+        &quot;context_accuracy&quot;: 0.5042857142857142
+      },
+      {
+        &quot;seed&quot;: 73,
+        &quot;n_interactions&quot;: 5,
+        &quot;context_accuracy&quot;: 0.5547619047619048
+      },
+      {
+        &quot;seed&quot;: 73,
+        &quot;n_interactions&quot;: 10,
+        &quot;context_accuracy&quot;: 0.6928571428571428
+      },
+      {
+        &quot;seed&quot;: 73,
+        &quot;n_interactions&quot;: 20,
+        &quot;context_accuracy&quot;: 0.8038095238095238
+      },
+      {
+        &quot;seed&quot;: 73,
+        &quot;n_interactions&quot;: 50,
+        &quot;context_accuracy&quot;: 0.8661904761904762
+      }
+    ],
+    &quot;summary&quot;: [
+      {
+        &quot;n_interactions&quot;: 3,
+        &quot;mean_context_accuracy&quot;: 0.5124761904761905,
+        &quot;standard_error&quot;: 0.006468833356074504,
+        &quot;ci95_low&quot;: 0.5014285714285714,
+        &quot;ci95_high&quot;: 0.5235238095238095,
+        &quot;n_seeds&quot;: 5
+      },
+      {
+        &quot;n_interactions&quot;: 5,
+        &quot;mean_context_accuracy&quot;: 0.5781904761904763,
+        &quot;standard_error&quot;: 0.006139718651918546,
+        &quot;ci95_low&quot;: 0.5654285714285715,
+        &quot;ci95_high&quot;: 0.5866666666666667,
+        &quot;n_seeds&quot;: 5
+      },
+      {
+        &quot;n_interactions&quot;: 10,
+        &quot;mean_context_accuracy&quot;: 0.6988571428571428,
+        &quot;standard_error&quot;: 0.0028034640056257194,
+        &quot;ci95_low&quot;: 0.6939047619047619,
+        &quot;ci95_high&quot;: 0.7038095238095238,
+        &quot;n_seeds&quot;: 5
+      },
+      {
+        &quot;n_interactions&quot;: 20,
+        &quot;mean_context_accuracy&quot;: 0.8031428571428572,
+        &quot;standard_error&quot;: 0.003937147925446541,
+        &quot;ci95_low&quot;: 0.7963809523809524,
+        &quot;ci95_high&quot;: 0.8101904761904762,
+        &quot;n_seeds&quot;: 5
+      },
+      {
+        &quot;n_interactions&quot;: 50,
+        &quot;mean_context_accuracy&quot;: 0.8829523809523809,
+        &quot;standard_error&quot;: 0.00550283373711418,
+        &quot;ci95_low&quot;: 0.8727619047619047,
+        &quot;ci95_high&quot;: 0.8935238095238095,
+        &quot;n_seeds&quot;: 5
+      }
+    ]
+  },
+  &quot;synthetic_downstream_utility&quot;: {
+    &quot;summary&quot;: [
+      {
+        &quot;method&quot;: &quot;real_only&quot;,
+        &quot;mean_context_accuracy&quot;: 0.6628571428571429,
+        &quot;ci95_low&quot;: 0.6292857142857142,
+        &quot;ci95_high&quot;: 0.6953571428571428
+      },
+      {
+        &quot;method&quot;: &quot;random&quot;,
+        &quot;mean_context_accuracy&quot;: 0.5996428571428571,
+        &quot;ci95_low&quot;: 0.5689285714285715,
+        &quot;ci95_high&quot;: 0.6296428571428572
+      },
+      {
+        &quot;method&quot;: &quot;uncertainty&quot;,
+        &quot;mean_context_accuracy&quot;: 0.6632142857142858,
+        &quot;ci95_low&quot;: 0.6296428571428572,
+        &quot;ci95_high&quot;: 0.6946428571428571
+      },
+      {
+        &quot;method&quot;: &quot;diversity&quot;,
+        &quot;mean_context_accuracy&quot;: 0.6053571428571429,
+        &quot;ci95_low&quot;: 0.5728571428571428,
+        &quot;ci95_high&quot;: 0.6385714285714286
+      },
+      {
+        &quot;method&quot;: &quot;failure_driven&quot;,
+        &quot;mean_context_accuracy&quot;: 0.6553571428571429,
+        &quot;ci95_low&quot;: 0.6232142857142857,
+        &quot;ci95_high&quot;: 0.6889285714285714
+      },
+      {
+        &quot;method&quot;: &quot;information_gain&quot;,
+        &quot;mean_context_accuracy&quot;: 0.6553571428571429,
+        &quot;ci95_low&quot;: 0.6228571428571429,
+        &quot;ci95_high&quot;: 0.6871428571428572
+      },
+      {
+        &quot;method&quot;: &quot;decision_boundary&quot;,
+        &quot;mean_context_accuracy&quot;: 0.6307142857142857,
+        &quot;ci95_low&quot;: 0.5992857142857143,
+        &quot;ci95_high&quot;: 0.6617857142857143
+      }
+    ],
+    &quot;paired_vs_real_only&quot;: {
+      &quot;random&quot;: {
+        &quot;mean_delta&quot;: -0.06321428571428572,
+        &quot;ci95&quot;: [
+          -0.08285714285714287,
+          -0.044642857142857144
+        ],
+        &quot;bootstrap_two_sided_p&quot;: 0.0
+      },
+      &quot;uncertainty&quot;: {
+        &quot;mean_delta&quot;: 0.0003571428571428559,
+        &quot;ci95&quot;: [
+          -0.00714285714285714,
+          0.007857142857142858
+        ],
+        &quot;bootstrap_two_sided_p&quot;: 0.942
+      },
+      &quot;diversity&quot;: {
+        &quot;mean_delta&quot;: -0.05750000000000001,
+        &quot;ci95&quot;: [
+          -0.07642857142857144,
+          -0.039642857142857146
+        ],
+        &quot;bootstrap_two_sided_p&quot;: 0.0
+      },
+      &quot;failure_driven&quot;: {
+        &quot;mean_delta&quot;: -0.007500000000000004,
+        &quot;ci95&quot;: [
+          -0.01821428571428572,
+          0.0024999999999999996
+        ],
+        &quot;bootstrap_two_sided_p&quot;: 0.15066666666666667
+      },
+      &quot;information_gain&quot;: {
+        &quot;mean_delta&quot;: -0.007500000000000004,
+        &quot;ci95&quot;: [
+          -0.01785714285714286,
+          0.0028571428571428545
+        ],
+        &quot;bootstrap_two_sided_p&quot;: 0.14733333333333334
+      },
+      &quot;decision_boundary&quot;: {
+        &quot;mean_delta&quot;: -0.032142857142857154,
+        &quot;ci95&quot;: [
+          -0.048571428571428585,
+          -0.016428571428571438
+        ],
+        &quot;bootstrap_two_sided_p&quot;: 0.0
+      }
+    }
+  },
+  &quot;noise_stress&quot;: [
+    {
+      &quot;noise&quot;: 0.0,
+      &quot;mean_global_accuracy&quot;: 0.9530612244897958,
+      &quot;ci95_low&quot;: 0.9306122448979591,
+      &quot;ci95_high&quot;: 0.9714285714285714
+    },
+    {
+      &quot;noise&quot;: 0.08,
+      &quot;mean_global_accuracy&quot;: 0.936734693877551,
+      &quot;ci95_low&quot;: 0.9142857142857143,
+      &quot;ci95_high&quot;: 0.9571428571428572
+    },
+    {
+      &quot;noise&quot;: 0.16,
+      &quot;mean_global_accuracy&quot;: 0.8809523809523809,
+      &quot;ci95_low&quot;: 0.8503401360544218,
+      &quot;ci95_high&quot;: 0.9119047619047619
+    },
+    {
+      &quot;noise&quot;: 0.24,
+      &quot;mean_global_accuracy&quot;: 0.8214285714285714,
+      &quot;ci95_low&quot;: 0.786734693877551,
+      &quot;ci95_high&quot;: 0.8561224489795919
+    },
+    {
+      &quot;noise&quot;: 0.32,
+      &quot;mean_global_accuracy&quot;: 0.751360544217687,
+      &quot;ci95_low&quot;: 0.7119047619047618,
+      &quot;ci95_high&quot;: 0.7887755102040817
+    }
+  ],
+  &quot;change_detection&quot;: {
+    &quot;roc_auc&quot;: 1.0,
+    &quot;best_operating_point&quot;: {
+      &quot;threshold&quot;: 0.2,
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1&quot;: 1.0
+    },
+    &quot;n_cases&quot;: 180
+  }
+}</pre></main></body></html>

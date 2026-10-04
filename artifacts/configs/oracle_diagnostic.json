@@ -1,0 +1,8 @@
+{
+  "source_module": "evals.suite.paper_runner.oracle_vs_pseudo",
+  "seed": 211,
+  "n_train": 220,
+  "n_test": 100,
+  "generated_per_user": 12,
+  "selected_max": 10
+}

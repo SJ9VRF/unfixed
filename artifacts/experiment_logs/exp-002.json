@@ -1,0 +1,13 @@
+{
+  "id": "EXP-002",
+  "title": "Context-dependent ground truth",
+  "hypothesis": "Context should change the correct user preference, not merely be stored as metadata.",
+  "setup": "Context-aware simulator with context dependence; compare context-aware inference and a trainable context model across interaction counts.",
+  "result": "At 50 interactions: context-aware inference 0.894 context accuracy and trainable context model 0.891.",
+  "interpretation": "Context can be evaluated as a real target rather than decorative metadata.",
+  "next": "Use context accuracy, not only global slot accuracy, as a primary controlled metric.",
+  "raw": [
+    "results/v2_context_benchmark.csv"
+  ],
+  "status": "supported"
+}

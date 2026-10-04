@@ -1,0 +1,13 @@
+{
+  "id": "EXP-010",
+  "title": "Noise stress test",
+  "hypothesis": "Personalization quality should degrade gracefully as evidence corruption rises.",
+  "setup": "Controlled observation noise from 0% to 32%; measure global inference accuracy with bootstrap intervals.",
+  "result": "Accuracy falls from 0.953 at 0% noise to 0.751 at 32% noise.",
+  "interpretation": "The model degrades monotonically rather than catastrophically, but robustness at high corruption remains insufficient.",
+  "next": "Keep uncertainty/restraint in the behavior policy and treat robust inference as open work.",
+  "raw": [
+    "results/v3_noise_stress.csv"
+  ],
+  "status": "supported-with-limit"
+}

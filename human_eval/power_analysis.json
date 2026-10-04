@@ -1,0 +1,13 @@
+{
+  "null_pairwise_win_rate": 0.5,
+  "alpha_two_sided": 0.05,
+  "target_power": 0.8,
+  "judgments_required": {
+    "0.56": 543,
+    "0.58": 305,
+    "0.6": 194,
+    "0.62": 134,
+    "0.65": 85
+  },
+  "note": "Independent-judgment approximation. A recruited study with repeated judgments per participant should inflate for clustering and report participant-level uncertainty."
+}

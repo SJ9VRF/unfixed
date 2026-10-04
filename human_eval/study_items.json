@@ -1,0 +1,14 @@
+{
+  "seed": 41,
+  "n_per_type": 12,
+  "items": 84,
+  "scenario_types": [
+    "cold_start",
+    "stable",
+    "context",
+    "drift",
+    "ambiguous",
+    "conflict",
+    "anti_personalization"
+  ]
+}

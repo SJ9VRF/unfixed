@@ -1,0 +1,7 @@
+{
+  "source_module": "evals.suite.paper_runner.synthetic_mass_sweep",
+  "seed": 313,
+  "n_train": 180,
+  "n_test": 80,
+  "design": "25 nonzero count \u00d7 reliability conditions plus real-only reference"
+}

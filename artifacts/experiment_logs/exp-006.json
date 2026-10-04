@@ -1,0 +1,14 @@
+{
+  "id": "EXP-006",
+  "title": "Oracle vs pseudo-label diagnostic",
+  "hypothesis": "Synthetic degradation is primarily caused by incorrect pseudo-labels near difficult decision boundaries.",
+  "setup": "Compare real-only, pseudo-labeled synthetic, oracle-labeled synthetic, and utility-calibrated selected data on held-out users.",
+  "result": "Real-only 0.664; pseudo 0.613; oracle 0.609; UCES 0.587. Pseudo-label error was 1/2200 (0.045%); selected UCES label error was 0/2173.",
+  "interpretation": "Label correctness is necessary but not sufficient; oracle labels do not remove the degradation.",
+  "next": "Test evidence duplication / reweighting directly.",
+  "raw": [
+    "results/paper_oracle_vs_pseudo.csv",
+    "results/paper_results.json"
+  ],
+  "status": "hypothesis-failed"
+}

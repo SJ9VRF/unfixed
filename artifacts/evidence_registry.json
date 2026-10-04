@@ -1,0 +1,453 @@
+{
+  "project": "The Unfixed User",
+  "author": "Aura Yavary",
+  "counts": {
+    "experiments": 13,
+    "failed_hypotheses": 5,
+    "major_decisions": 6,
+    "primary_failure_modes": 4
+  },
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "title": "Cold-start: retrieval vs learned personalization",
+      "status": "supported-with-boundary",
+      "hypothesis": "A learned structured personalization model should beat sparse retrieval when user evidence is scarce.",
+      "reproduce": "python scripts/run_experiment.py EXP-001 --out scratch/exp-001",
+      "code": [
+        {
+          "path": "evals/suite/runner.py",
+          "sha256": "a36da28efff7360114f66a89dc82e5a2d0bce48c7a7c906baadc42048ec52d7e",
+          "bytes": 5213
+        }
+      ],
+      "configs": [
+        {
+          "path": "artifacts/configs/cold_start.json",
+          "sha256": "cea50f35f844d3abb21811b94c22d851c227d97619c11523a90ce356c670217a",
+          "bytes": 209
+        }
+      ],
+      "raw_evidence": [
+        {
+          "path": "results/benchmark.csv",
+          "sha256": "2f677b9b94d6deb8884408b498fa84602df68a35734171b00d3636b94cf2a7cb",
+          "bytes": 1942
+        }
+      ],
+      "decisions": [],
+      "failures": []
+    },
+    {
+      "id": "EXP-002",
+      "title": "Context-dependent ground truth",
+      "status": "supported",
+      "hypothesis": "Context should change the correct user preference, not merely be stored as metadata.",
+      "reproduce": "python scripts/run_experiment.py EXP-002 --out scratch/exp-002",
+      "code": [
+        {
+          "path": "evals/suite/v2_runner.py",
+          "sha256": "aa74962941e7aef0a421a6ebd15afa5357e674359ef166318765f72a7463fca0",
+          "bytes": 8139
+        }
+      ],
+      "configs": [],
+      "raw_evidence": [
+        {
+          "path": "results/v2_context_benchmark.csv",
+          "sha256": "e7f302bebe9c90eaee2af97428eae37d67f3317b948ae3e62b22b761af3faf3d",
+          "bytes": 734
+        }
+      ],
+      "decisions": [],
+      "failures": []
+    },
+    {
+      "id": "EXP-003",
+      "title": "Repeated-seed stability",
+      "status": "supported",
+      "hypothesis": "The context result should survive independent simulator/training seeds.",
+      "reproduce": "python scripts/run_experiment.py EXP-003 --out scratch/exp-003",
+      "code": [
+        {
+          "path": "evals/suite/v3_runner.py",
+          "sha256": "b919dc7c89a6259bc7b4e2c80014c38aaa0231f9b74bb2728e067c17cdb47600",
+          "bytes": 9147
+        }
+      ],
+      "configs": [
+        {
+          "path": "artifacts/configs/seed_stability.json",
+          "sha256": "eac4e42cdc95f2e2730f630e6e111bb4f9d35ba6a9bcd63892a6060fb12b0d93",
+          "bytes": 229
+        }
+      ],
+      "raw_evidence": [
+        {
+          "path": "results/v3_seed_stability.csv",
+          "sha256": "72f3ce7d1f47c6eb091f986dc62e17d90aaeb16cf0f8c430ac4eb65b5b555117",
+          "bytes": 655
+        },
+        {
+          "path": "results/v3_seed_summary.csv",
+          "sha256": "98836ea2261f793ed359d4d51c26d50ad91e0b24d2bfa28f8ba150d9d199dd06",
+          "bytes": 498
+        }
+      ],
+      "decisions": [],
+      "failures": []
+    },
+    {
+      "id": "EXP-004",
+      "title": "Selector proxy ablation",
+      "status": "proxy-supported",
+      "hypothesis": "Selection policies that score higher on verified information value should create better training data.",
+      "reproduce": "python scripts/run_experiment.py EXP-004 --out scratch/exp-004",
+      "code": [
+        {
+          "path": "evals/suite/v2_runner.py",
+          "sha256": "aa74962941e7aef0a421a6ebd15afa5357e674359ef166318765f72a7463fca0",
+          "bytes": 8139
+        },
+        {
+          "path": "synthetic_experience/selection/engine.py",
+          "sha256": "2b372faa8a4784bf7177ba4a745793ad85ae7cc49e4a03962a2a7e286edbe64a",
+          "bytes": 1384
+        }
+      ],
+      "configs": [],
+      "raw_evidence": [
+        {
+          "path": "results/selection_ablation.csv",
+          "sha256": "f9e6fb2f9a1f2ccc8273eb26ba41b04b56a09ead05747689eea03eaa35493361",
+          "bytes": 199
+        }
+      ],
+      "decisions": [
+        "D-001"
+      ],
+      "failures": [
+        "F-003"
+      ]
+    },
+    {
+      "id": "EXP-005",
+      "title": "Synthetic downstream utility",
+      "status": "hypothesis-failed",
+      "hypothesis": "More informative synthetic examples should improve downstream personalization.",
+      "reproduce": "python scripts/run_experiment.py EXP-005 --out scratch/exp-005",
+      "code": [
+        {
+          "path": "evals/suite/v3_runner.py",
+          "sha256": "b919dc7c89a6259bc7b4e2c80014c38aaa0231f9b74bb2728e067c17cdb47600",
+          "bytes": 9147
+        }
+      ],
+      "configs": [
+        {
+          "path": "artifacts/configs/synthetic_utility.json",
+          "sha256": "db845f54c826a2a7b04e3f25bc573bec57e07d9c23d1218f1067bcfef711d4f8",
+          "bytes": 292
+        }
+      ],
+      "raw_evidence": [
+        {
+          "path": "results/v3_synthetic_utility.csv",
+          "sha256": "2b0942a78d11344d059ce4e515966f5cc2b0463e3d91e9b1f0ceaedc0e26966d",
+          "bytes": 544
+        },
+        {
+          "path": "results/v3_synthetic_comparisons.json",
+          "sha256": "47012cb55eeefca296f0ec44b6317dfcf608fa1a70790b4e33cea0d7b06362fb",
+          "bytes": 1091
+        }
+      ],
+      "decisions": [
+        "D-001"
+      ],
+      "failures": [
+        "F-001",
+        "F-003"
+      ]
+    },
+    {
+      "id": "EXP-006",
+      "title": "Oracle vs pseudo-label diagnostic",
+      "status": "hypothesis-failed",
+      "hypothesis": "Synthetic degradation is primarily caused by incorrect pseudo-labels near difficult decision boundaries.",
+      "reproduce": "python scripts/run_experiment.py EXP-006 --out scratch/exp-006",
+      "code": [
+        {
+          "path": "evals/suite/paper_runner.py",
+          "sha256": "1c9964e33e12fe0e409d72f2e31c65517def603e03f0a4b595134e4006df49b2",
+          "bytes": 14916
+        }
+      ],
+      "configs": [
+        {
+          "path": "artifacts/configs/oracle_diagnostic.json",
+          "sha256": "366986849040ff21fe3a7c457afc8bd12b29e87d849bb8b744f0ffc67d96a092",
+          "bytes": 167
+        }
+      ],
+      "raw_evidence": [
+        {
+          "path": "results/paper_oracle_vs_pseudo.csv",
+          "sha256": "310cdafb89b719366b54df89a5623bca69a6bb722f1551d91d58b6d8a12fa38c",
+          "bytes": 297
+        },
+        {
+          "path": "results/paper_results.json",
+          "sha256": "759321bed90ce1660b4c43dbe2a72d0ae8e8609264959b05ab657253e7ae58d0",
+          "bytes": 20484
+        }
+      ],
+      "decisions": [
+        "D-002"
+      ],
+      "failures": [
+        "F-002"
+      ]
+    },
+    {
+      "id": "EXP-007",
+      "title": "Synthetic evidence-mass sweep",
+      "status": "supported",
+      "hypothesis": "If distributional reweighting is the mechanism, harm should grow with injected synthetic evidence mass.",
+      "reproduce": "python scripts/run_experiment.py EXP-007 --out scratch/exp-007",
+      "code": [
+        {
+          "path": "evals/suite/paper_runner.py",
+          "sha256": "1c9964e33e12fe0e409d72f2e31c65517def603e03f0a4b595134e4006df49b2",
+          "bytes": 14916
+        }
+      ],
+      "configs": [
+        {
+          "path": "artifacts/configs/mass_sweep.json",
+          "sha256": "f22e58ca0455473dddde9d239a7c132d3f6741fa041af25b27446eb43eccd9ac",
+          "bytes": 207
+        }
+      ],
+      "raw_evidence": [
+        {
+          "path": "results/paper_synthetic_mass_sweep.csv",
+          "sha256": "28b1815df1a6d88efc99b4bc2ce6c2930c654e415a6d8dd97449f40d6b3573a4",
+          "bytes": 1407
+        },
+        {
+          "path": "results/paper_results.json",
+          "sha256": "759321bed90ce1660b4c43dbe2a72d0ae8e8609264959b05ab657253e7ae58d0",
+          "bytes": 20484
+        }
+      ],
+      "decisions": [
+        "D-003"
+      ],
+      "failures": []
+    },
+    {
+      "id": "EXP-008",
+      "title": "Mass-capped mitigation",
+      "status": "supported-mitigation",
+      "hypothesis": "Capping total synthetic evidence mass and duplicate signatures should recover the degradation.",
+      "reproduce": "python scripts/run_experiment.py EXP-008 --out scratch/exp-008",
+      "code": [
+        {
+          "path": "evals/suite/paper_runner.py",
+          "sha256": "1c9964e33e12fe0e409d72f2e31c65517def603e03f0a4b595134e4006df49b2",
+          "bytes": 14916
+        },
+        {
+          "path": "synthetic_experience/mass_control.py",
+          "sha256": "a936672e99e3e1133a44003db5c0b5f7795c3f1924b92885fe2841f4f8887c09",
+          "bytes": 1027
+        }
+      ],
+      "configs": [
+        {
+          "path": "artifacts/configs/mass_control.json",
+          "sha256": "dce444af7f44c0da11900a29861c099efa8f7ac72b5386f850e0fa1f5550358d",
+          "bytes": 222
+        }
+      ],
+      "raw_evidence": [
+        {
+          "path": "results/paper_mass_control.csv",
+          "sha256": "27a79af3ce26410186c46f5e13105e877c9814edf6167a9e5516c8722fe1438c",
+          "bytes": 314
+        },
+        {
+          "path": "results/paper_mass_control_seeds.csv",
+          "sha256": "7ffc015fc2b08e4393bc48987a2a3b2ffdc020839da3330bf7a6f8e30bf8f1fb",
+          "bytes": 336
+        }
+      ],
+      "decisions": [
+        "D-003"
+      ],
+      "failures": []
+    },
+    {
+      "id": "EXP-009",
+      "title": "Drift detector baseline check",
+      "status": "hypothesis-failed",
+      "hypothesis": "The project-specific drift heuristic is a strong change detector.",
+      "reproduce": "python scripts/run_experiment.py EXP-009 --out scratch/exp-009",
+      "code": [
+        {
+          "path": "evals/suite/paper_runner.py",
+          "sha256": "1c9964e33e12fe0e409d72f2e31c65517def603e03f0a4b595134e4006df49b2",
+          "bytes": 14916
+        }
+      ],
+      "configs": [],
+      "raw_evidence": [
+        {
+          "path": "results/paper_drift_baselines.csv",
+          "sha256": "26d2a08eda645891695d02b50b5a652fe8709935426aa171d0e9b8b8e196ca5b",
+          "bytes": 111
+        }
+      ],
+      "decisions": [
+        "D-005"
+      ],
+      "failures": [
+        "F-004"
+      ]
+    },
+    {
+      "id": "EXP-010",
+      "title": "Noise stress test",
+      "status": "supported-with-limit",
+      "hypothesis": "Personalization quality should degrade gracefully as evidence corruption rises.",
+      "reproduce": "python scripts/run_experiment.py EXP-010 --out scratch/exp-010",
+      "code": [
+        {
+          "path": "evals/suite/v3_runner.py",
+          "sha256": "b919dc7c89a6259bc7b4e2c80014c38aaa0231f9b74bb2728e067c17cdb47600",
+          "bytes": 9147
+        }
+      ],
+      "configs": [],
+      "raw_evidence": [
+        {
+          "path": "results/v3_noise_stress.csv",
+          "sha256": "4571bd68aa903d3cd2c063b2438e65882bf7d8d6cf41dba2f901cda5c33c3041",
+          "bytes": 358
+        }
+      ],
+      "decisions": [],
+      "failures": []
+    },
+    {
+      "id": "EXP-011",
+      "title": "Selective personalization risk\u2013coverage",
+      "status": "supported",
+      "hypothesis": "Confidence should support a useful abstention/restraint policy.",
+      "reproduce": "python scripts/run_experiment.py EXP-011 --out scratch/exp-011",
+      "code": [
+        {
+          "path": "evals/suite/paper_runner.py",
+          "sha256": "1c9964e33e12fe0e409d72f2e31c65517def603e03f0a4b595134e4006df49b2",
+          "bytes": 14916
+        },
+        {
+          "path": "user_model/probabilistic.py",
+          "sha256": "5f1d931fdd7a316375becc07429b7d627f33dd5e8745f08bfaa9fafb498d3735",
+          "bytes": 2451
+        }
+      ],
+      "configs": [],
+      "raw_evidence": [
+        {
+          "path": "results/paper_risk_coverage.csv",
+          "sha256": "c64a50483c982ba310c7f3e7313085e6c8e8751e2361bd04bae358f421867041",
+          "bytes": 489
+        }
+      ],
+      "decisions": [
+        "D-004"
+      ],
+      "failures": []
+    },
+    {
+      "id": "EXP-012",
+      "title": "Response-level restraint benchmark",
+      "status": "supported",
+      "hypothesis": "Better state inference should improve actual response selection, and always-personalize should fail on irrelevant queries.",
+      "reproduce": "python scripts/run_experiment.py EXP-012 --out scratch/exp-012",
+      "code": [
+        {
+          "path": "evals/response_level/repeated.py",
+          "sha256": "b4b24df97e1bf64cfc5df24affaab05f35c34d023221680202874998c231a660",
+          "bytes": 3062
+        },
+        {
+          "path": "evals/response_level/benchmark.py",
+          "sha256": "d290fd4b5735fbaefecdfe2d083be5a5653a87703caa3693faddbf09d3b1da4e",
+          "bytes": 10905
+        }
+      ],
+      "configs": [
+        {
+          "path": "artifacts/configs/response_level.json",
+          "sha256": "959a2de274fa25d3042a9788b20c0e95e0570b43ee679555d7f499ad7e238a07",
+          "bytes": 180
+        }
+      ],
+      "raw_evidence": [
+        {
+          "path": "results/paper_response_level_repeated.csv",
+          "sha256": "5cdb7a0d6f2103da45e2663abdbc2d902d50677d1bd9381a9241927e5016cfb8",
+          "bytes": 2539
+        },
+        {
+          "path": "results/paper_response_level_seeds.csv",
+          "sha256": "f69b5431a464d56f07b524c096532d3d1ec1a0c3fe02e0ecb7d1c0a9700a44b3",
+          "bytes": 4520
+        },
+        {
+          "path": "results/paper_response_cases.csv",
+          "sha256": "6e00c8daf7d4ba038098943e82681696adf8feb1bdce0a7e86108ec8c4f283cc",
+          "bytes": 17793
+        }
+      ],
+      "decisions": [
+        "D-004"
+      ],
+      "failures": [
+        "F-005"
+      ]
+    },
+    {
+      "id": "EXP-013",
+      "title": "Personalization regret vs evidence",
+      "status": "supported",
+      "hypothesis": "Regret should decrease as the system accumulates real interactions.",
+      "reproduce": "python scripts/run_experiment.py EXP-013 --out scratch/exp-013",
+      "code": [
+        {
+          "path": "evals/suite/paper_runner.py",
+          "sha256": "1c9964e33e12fe0e409d72f2e31c65517def603e03f0a4b595134e4006df49b2",
+          "bytes": 14916
+        }
+      ],
+      "configs": [],
+      "raw_evidence": [
+        {
+          "path": "results/paper_regret.csv",
+          "sha256": "da6fb58f5f7c37316d713842292d867d7573b77e0f446c52b706020f9702bb1a",
+          "bytes": 337
+        }
+      ],
+      "decisions": [],
+      "failures": []
+    }
+  ],
+  "policy": {
+    "timestamps": "omitted",
+    "git_history": "not reconstructed",
+    "external_results": "not populated unless actually executed"
+  }
+}

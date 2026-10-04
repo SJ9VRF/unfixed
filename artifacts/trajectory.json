@@ -1,0 +1,57 @@
+[
+  {
+    "label": "First signal",
+    "events_seen": 1,
+    "value": "price",
+    "confidence": 0.856,
+    "drift_score": 0.0,
+    "uncertainty": null,
+    "response": "Recommendation adapted to travel_priority=price.",
+    "personalized": true,
+    "rationale": "Relevant preference travel_priority; gate=0.90; preference confidence=0.86."
+  },
+  {
+    "label": "Sparse evidence",
+    "events_seen": 3,
+    "value": "price",
+    "confidence": 0.939,
+    "drift_score": 0.0,
+    "uncertainty": null,
+    "response": "Recommendation adapted to travel_priority=price.",
+    "personalized": true,
+    "rationale": "Relevant preference travel_priority; gate=0.90; preference confidence=0.94."
+  },
+  {
+    "label": "Stable preference",
+    "events_seen": 8,
+    "value": "price",
+    "confidence": 0.99,
+    "drift_score": 0.0,
+    "uncertainty": null,
+    "response": "Recommendation adapted to travel_priority=price.",
+    "personalized": true,
+    "rationale": "Relevant preference travel_priority; gate=0.90; preference confidence=0.99."
+  },
+  {
+    "label": "Preference reversal",
+    "events_seen": 10,
+    "value": "price",
+    "confidence": 0.769,
+    "drift_score": 0.815,
+    "uncertainty": "recent evidence indicates preference drift",
+    "response": "Recommendation adapted to travel_priority=price.",
+    "personalized": true,
+    "rationale": "Relevant preference travel_priority; gate=0.90; preference confidence=0.77."
+  },
+  {
+    "label": "Recovered state",
+    "events_seen": 12,
+    "value": "comfort",
+    "confidence": 0.691,
+    "drift_score": 1.0,
+    "uncertainty": "recent evidence indicates preference drift",
+    "response": "Recommendation adapted to travel_priority=comfort.",
+    "personalized": true,
+    "rationale": "Relevant preference travel_priority; gate=0.90; preference confidence=0.69."
+  }
+]

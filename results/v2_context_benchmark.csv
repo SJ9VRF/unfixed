@@ -1,0 +1,13 @@
+method,n_interactions,global_accuracy,context_accuracy
+context_aware_inference,1,0.7444444444444445,0.7155555555555555
+trainable_context_model,1,,0.39746031746031746
+context_aware_inference,3,0.8247863247863247,0.7854700854700855
+trainable_context_model,3,,0.5088888888888888
+context_aware_inference,5,0.8005780346820809,0.7670520231213873
+trainable_context_model,5,,0.5793650793650794
+context_aware_inference,10,0.8463114754098361,0.8028688524590164
+trainable_context_model,10,,0.6876190476190476
+context_aware_inference,20,0.8818635607321131,0.8276206322795341
+trainable_context_model,20,,0.8063492063492064
+context_aware_inference,50,0.9619047619047619,0.893968253968254
+trainable_context_model,50,,0.8907936507936508

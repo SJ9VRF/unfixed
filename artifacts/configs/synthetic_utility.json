@@ -1,0 +1,15 @@
+{
+  "source_module": "evals.suite.v3_runner.downstream_synthetic_utility",
+  "seed": 91,
+  "n_train": 180,
+  "n_test": 80,
+  "real_interactions": 10,
+  "policies": [
+    "random",
+    "uncertainty",
+    "diversity",
+    "failure_driven",
+    "information_gain",
+    "decision_boundary"
+  ]
+}

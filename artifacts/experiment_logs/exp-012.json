@@ -1,0 +1,15 @@
+{
+  "id": "EXP-012",
+  "title": "Response-level restraint benchmark",
+  "hypothesis": "Better state inference should improve actual response selection, and always-personalize should fail on irrelevant queries.",
+  "setup": "Five seeds; natural-language response-choice cases; compare generic, always-personalize, last-event, inferred-state, Bayesian-state, structured learner, and a scratch neural ranker.",
+  "result": "Bayesian state + restraint: 0.680 \u00b1 0.013 overall. Always-personalize: 0.591 \u00b1 0.009 and 100% over-personalization on no-personalize cases. Neural ranker: 0.450 \u00b1 0.022.",
+  "interpretation": "Behavioral restraint matters; a more flexible neural scorer is not automatically stronger in this small controlled regime.",
+  "next": "Move response-level evaluation to real model generations and blinded human judgments.",
+  "raw": [
+    "results/paper_response_level_repeated.csv",
+    "results/paper_response_level_seeds.csv",
+    "results/paper_response_cases.csv"
+  ],
+  "status": "supported"
+}
